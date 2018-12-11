@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/style.css">
+
+        <title>
+            Class FluitoPHP\Authentication\Authentication | FluitoPHP
+        </title>
+    </head>
+
+    <body class="FluitoPHP-API">
+<div id="navigation" class="bg-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a href="index.html">
+                        FluitoPHP
+                    </a>
+                </li>
+
+                    <li class="nav-item ">
+                        <a href="classes.html">Classes</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="interfaces.html">Interfaces</a>
+                    </li>
+
+
+
+                    <li class="nav-item ">
+                        <a href="exceptions.html">Exceptions</a>
+                    </li>
+
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-todo.html">
+                            @Todo
+                        </a>
+                    </li>
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-deprecated.html">
+                            @Deprecated
+                        </a>
+                    </li>
+            </ul>
+
+            <form id="search" class="form-inline my-2 my-lg-0 float-right">
+                <input type="text" name="q" class="form-control text" placeholder="Search class, function or namespace" autofocus>
+            </form>
+        </nav>
+    </div>
+</div>
+            <div id="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+<div class="float-left type breadcrumb">
+    <span class="badge badge-success">Class</span>
+</div>
+
+<nav class="float-left" aria-label="breadcrumb" role="navigation">
+<ol class="breadcrumb pull-left">
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.html">FluitoPHP</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.Authentication.html">Authentication</a>
+        </li>
+
+        <li class="breadcrumb-item active" aria-current="page">Authentication</li>
+</ol>
+</nav>                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+    <h2 class="mt-3 mb-3 ">Authentication</h2>
+
+        <div class="card">
+            <div class="card-body">
+                <pre>Authentication Class.
+
+This class is framework for authentication in your application.
+
+Variables:
+     1. $instance
+     2. $config
+     3. $currentUser
+     4. $database
+
+Functions:
+     1. __construct
+     2. GetInstance
+     3. UpdateConfig
+     4. GetPrefix
+     5. GetConn
+     6. Upgrade
+     7. PasswordHash
+     8. PasswordVerify
+     9. Login
+     10. SetUser
+     11. GetUser
+     12. GetLoggedInUser
+     13. Logout
+     14. CreatePasswordReset
+     15. ValidatePasswordReset
+     16. FulfillPasswordReset
+     17. GetUserList</pre>
+            </div>
+        </div>
+
+
+
+
+    <div class="info">
+        
+
+            <br>
+            <br>
+            <a href="source-class-FluitoPHP.Authentication.Authentication.html" class="open-source-code">Open source code</a>
+        <br>
+    </div>
+
+        <div class="card" id="methods">
+        <div class="card-header">
+            <h4><strong>Methods Summary</strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetInstance">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public static
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetInstance">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#131-139">GetInstance</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to fetch the Instance object globally.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_UpdateConfig">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_UpdateConfig">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#148-201">UpdateConfig</a>( <span> array <span class="property-name">$config</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to update the configuration of the authentication.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetPrefix">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetPrefix">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#209-213">GetPrefix</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get table prefix of authentication.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetConn">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetConn">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#221-225">GetConn</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get database connection of authentication.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Upgrade">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Upgrade">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#233-507">Upgrade</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to create/upgrade the base tables for authentication.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_PasswordHash">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_PasswordHash">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#519-535">PasswordHash</a>( <span> string <span class="property-name">$password</span> </span>, <span> bool <span class="property-name">$isSalt</span> = <span class="php-keyword1">false</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to hash the password for safe storage.
+
+Note: This method truncates the input password to 72 characters length.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_PasswordVerify">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_PasswordVerify">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#548-564">PasswordVerify</a>( <span> string <span class="property-name">$password</span> </span>, <span> string <span class="property-name">$hashedPassword</span> </span>, <span> bool <span class="property-name">$isSalt</span> = <span class="php-keyword1">false</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to hash the password for safe storage.
+
+Note: This method truncates the input password to 72 characters length.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Login">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Login">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#576-611">Login</a>( <span> string <span class="property-name">$user_login</span> </span>, <span> string <span class="property-name">$password</span> </span>, <span> bool <span class="property-name">$remember</span> = <span class="php-keyword1">false</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to login the user with the password.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_SetUser">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_SetUser">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#623-708">SetUser</a>( <span> string <span class="property-name">$user_login</span> = <span class="php-keyword1">NULL</span></span>, <span> bool <span class="property-name">$remember</span> = <span class="php-keyword1">false</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the login salt and store it in the database and cookie/session.
+
+Note: This method do not require a password.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetUser">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetUser">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#717-787">GetUser</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get logged in user else system user.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetLoggedInUser">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetLoggedInUser">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#796-807">GetLoggedInUser</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get logged in user.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Logout">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Logout">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#815-845">Logout</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to logout a user.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_DisableUser">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_DisableUser">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#855-999">DisableUser</a>( <span> string <span class="property-name">$user_login</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to disable an existing user.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_CreatePasswordReset">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_CreatePasswordReset">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#1009-1077">CreatePasswordReset</a>( <span> string <span class="property-name">$user_login</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate a reset password request of a user.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_ValidatePasswordReset">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_ValidatePasswordReset">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#1088-1149">ValidatePasswordReset</a>( <span> string <span class="property-name">$salt_id</span> </span>, <span> string <span class="property-name">$salt</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to validate the reset password request of a user.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_FulfillPasswordReset">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_FulfillPasswordReset">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#1161-1205">FulfillPasswordReset</a>( <span> string <span class="property-name">$salt_id</span> </span>, <span> string <span class="property-name">$salt</span> </span>, <span> string <span class="property-name">$password</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to fulfill the reset password request of a user.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetUserList">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetUserList">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Authentication.Authentication.html#1214-1277">GetUserList</a>( <span> bool <span class="property-name">$activeOnly</span> = <span class="php-keyword1">false</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to list the users in the system.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+        </ul>
+        </div>
+
+
+
+
+
+
+
+    <div id="footer">
+        Thanks to <a href="https://github.com/apigen/apigen">ApiGen</a>
+    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="resources/jquery-3.2.1.min.js"></script>
+        <script src="resources/jquery-ui-1.12.1.min.js"></script>
+
+        <script src="elementlist.js"></script>
+        <script src="resources/main.js"></script>
+    </body>
+</html>
+
+

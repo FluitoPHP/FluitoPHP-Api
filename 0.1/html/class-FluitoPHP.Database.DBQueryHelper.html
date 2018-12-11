@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/style.css">
+
+        <title>
+            Class FluitoPHP\Database\DBQueryHelper | FluitoPHP
+        </title>
+    </head>
+
+    <body class="FluitoPHP-API">
+<div id="navigation" class="bg-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a href="index.html">
+                        FluitoPHP
+                    </a>
+                </li>
+
+                    <li class="nav-item ">
+                        <a href="classes.html">Classes</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="interfaces.html">Interfaces</a>
+                    </li>
+
+
+
+                    <li class="nav-item ">
+                        <a href="exceptions.html">Exceptions</a>
+                    </li>
+
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-todo.html">
+                            @Todo
+                        </a>
+                    </li>
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-deprecated.html">
+                            @Deprecated
+                        </a>
+                    </li>
+            </ul>
+
+            <form id="search" class="form-inline my-2 my-lg-0 float-right">
+                <input type="text" name="q" class="form-control text" placeholder="Search class, function or namespace" autofocus>
+            </form>
+        </nav>
+    </div>
+</div>
+            <div id="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+<div class="float-left type breadcrumb">
+    <span class="badge badge-success">Class</span>
+</div>
+
+<nav class="float-left" aria-label="breadcrumb" role="navigation">
+<ol class="breadcrumb pull-left">
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.html">FluitoPHP</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.Database.html">Database</a>
+        </li>
+
+        <li class="breadcrumb-item active" aria-current="page">DBQueryHelper</li>
+</ol>
+</nav>                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+    <h2 class="mt-3 mb-3 ">DBQueryHelper</h2>
+
+        <div class="card">
+            <div class="card-body">
+                <pre>DBQueryHelper Class.
+
+This class is used as a base model for the database query generation.
+
+Variables:
+     1. $connection
+     2. $type
+     3. $customType
+     4. $query
+     5. $tables
+     6. $distinct
+     7. $columns
+     8. $where
+     9. $group
+     10. $having
+     11. $order
+     12. $perpage
+     13. $page
+     14. $values
+     15. $indexes
+     16. $viewSelect
+     17. $temporary
+     18. $reqAutoIncrement
+     19. $addArgs
+
+Functions:
+     1. __construct
+     2. Generate
+     3. Select
+     4. CheckTable
+     5. CreateTable
+     6. AlterTable
+     7. TruncateTable
+     8. DropTable
+     9. CreateView
+     10. DropView
+     11. Insert
+     12. Update
+     13. Delete
+     14. Custom
+     15. Query
+     16. GetResults
+     17. GetRow
+     18. GetColumn
+     19. GetVar
+     20. GetColInfo
+     21. IsSelect
+     22. Meta
+     23. GenCustom
+     24. RetSelect
+     25. RetCheckTable
+     26. RetCreateTable
+     27. RetAutoIncrement
+     28. RetAlterTable
+     29. RetTruncateTable
+     30. RetDropTable
+     31. RetCreateView
+     32. RetDropView
+     33. RetInsert
+     34. RetUpdate
+     35. RetDelete
+     36. ResolveMeta</pre>
+            </div>
+        </div>
+
+
+
+        <div>
+            <h4>Known subclasses</h4>
+            <a href="class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html">FluitoPHP\Database\Mysql\MysqlQueryHelper</a>
+        </div>
+
+    <div class="info">
+        <strong>Abstract</strong><br>
+
+            <br>
+            <br>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html" class="open-source-code">Open source code</a>
+        <br>
+    </div>
+
+        <div class="card" id="methods">
+        <div class="card-header">
+            <h4><strong>Methods Summary</strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+
+
+
+<li class="list-group-item name ">
+    <div id="___construct">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#___construct">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#266-270">__construct</a>( <span> \FluitoPHP\Database\DBConnectionHelper <span class="property-name">$connection</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to initiate query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Generate">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Generate">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#281-402">Generate</a>( <span> bool <span class="property-name">$autoIncrement</span> = <span class="php-keyword1">false</span></span>, <span> string <span class="property-name">$column</span> = <span class="php-quote">''</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Select">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Select">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#496-552">Select</a>( <span> mixed <span class="property-name">$tables</span> </span>, <span> array <span class="property-name">$columns</span> = <span class="php-keyword1">array</span> ( )</span>, <span> array <span class="property-name">$where</span> = <span class="php-keyword1">array</span> ( )</span>, <span> array <span class="property-name">$group</span> = <span class="php-keyword1">array</span> ( )</span>, <span> array <span class="property-name">$having</span> = <span class="php-keyword1">array</span> ( )</span>, <span> array <span class="property-name">$order</span> = <span class="php-keyword1">array</span> ( )</span>, <span> bool <span class="property-name">$distinct</span> = <span class="php-keyword1">false</span></span>, <span> int <span class="property-name">$perpage</span> = <span class="php-num">0</span></span>, <span> int <span class="property-name">$page</span> = <span class="php-num">1</span></span>, <span> array <span class="property-name">$addArgs</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to define select query. Use below structure to pass values.
+
+table id (array)
+|
+|--subquery (\FluitoPHP\Database\DBQueryHelper)/table (string)
+|
+|--alias (string)
+|
+|--jointype (string) (j, ij, cj, sj, lj, rj, nj, nlj, nrj, loj, roj, nloj, nroj)
+|
+|--joinconditions (array of array)
+|  |
+|  |--condition id (array)
+|  |  |
+|  |  |--startbrackets (string)
+|  |  |
+|  |  |--operatortype (string) (AND, OR)
+|  |  |
+|  |  |--notoperator (bool)
+|  |  |
+|  |  |--column or expression (string)/subquery (\FluitoPHP\Database\DBQueryHelper)/value (string)
+|  |  |
+|  |  |--operator (string)
+|  |  |
+|  |  |--rightcolumn or rightexpression (string)/rightsubquery (\FluitoPHP\Database\DBQueryHelper)/rightvalue (string)
+|  |  |
+|  |  |--endbrackets (string)
+
+column id (array)
+|
+|--column or expression (string)/subquery (\FluitoPHP\Database\DBQueryHelper)/value
+|
+|--label (string)
+
+where id (array)
+|
+|--startbrackets (string)
+|
+|--operatortype (string) (AND, OR)
+|
+|--notoperator (bool)
+|
+|--column or expression (string)/subquery (\FluitoPHP\Database\DBQueryHelper)/value (string)
+|
+|--rightcolumn or rightexpression (string)/rightsubquery (\FluitoPHP\Database\DBQueryHelper)/rightvalue (string)
+|
+|--operator (string)
+|
+|--endbrackets (string)
+
+group id (array)
+|
+|--column or expression (string)/subquery (\FluitoPHP\Database\DBQueryHelper)/value (string)
+
+having id (array)
+|
+|--startbrackets (string)
+|
+|--operatortype (string) (AND, OR)
+|
+|--notoperator (bool)
+|
+|--column or expression (string)/subquery (\FluitoPHP\Database\DBQueryHelper)/value (string)
+|
+|--rightcolumn or rightexpression (string)/rightsubquery (\FluitoPHP\Database\DBQueryHelper)/rightvalue (string)
+|
+|--operator (string)
+|
+|--endbrackets (string)
+
+order id (array)
+|
+|--column or expression (string)/subquery (\FluitoPHP\Database\DBQueryHelper)/value (string)
+|
+|--type (string) (a, d)</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_CheckTable">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_CheckTable">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#563-581">CheckTable</a>( <span> string <span class="property-name">$table</span> </span>, <span> array <span class="property-name">$addArgs</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the query to check if the table exists in the database.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_CreateTable">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_CreateTable">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#635-668">CreateTable</a>( <span> string <span class="property-name">$table</span> </span>, <span> array <span class="property-name">$columns</span> </span>, <span> array <span class="property-name">$indexes</span> = <span class="php-keyword1">array</span> ( )</span>, <span> string <span class="property-name">$temporary</span> = <span class="php-quote">'N'</span></span>, <span> array <span class="property-name">$addArgs</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the query to create a table in the database. Use below structure to pass parameters.
+
+column id (array key is the column name)
+|
+|--type (string) (field type, use actual name as per database as most of the types are common in all databases)
+|
+|--length (int)
+|
+|--isnull (bool)
+|
+|--autoincrement (bool)
+|
+|--default (string/array)
+|  |
+|  |--function (string)
+|
+|--primary (bool)
+|
+|--unique (bool)
+|
+|--index (bool)
+|
+|--check (string)
+|
+|--referencetable  (string)
+|
+|--referencecolumn (string)
+
+index id (array key is the index name)
+|
+|--indextype (string) (K, I, U, UK, UI, FK, FT, FTK, FTI, S, SK, SI, CH)
+|
+|--columns (array of strings)
+|
+|--check (string)
+|
+|--referencetable (string)
+|
+|--referencecolumns (array of strings)
+|  |
+|  |--column (string)</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_AlterTable">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_AlterTable">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#727-750">AlterTable</a>( <span> string <span class="property-name">$table</span> </span>, <span> array <span class="property-name">$columns</span> </span>, <span> array <span class="property-name">$indexes</span> = <span class="php-keyword1">array</span> ( )</span>, <span> array <span class="property-name">$addArgs</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the query to alter a table in database.
+
+column id (array key is the column name)
+|
+|--request (string) (A, U, D)
+|
+|--place (string) (F, A)
+|
+|--after (string)
+|
+|--rename (string)
+|
+|--type (string) (field type, use actual name as per database as most of the types are common in all databases)
+|
+|--length (int)
+|
+|--isnull (bool)
+|
+|--autoincrement (bool)
+|
+|--default (string/array)
+|  |
+|  |--function (string)
+|
+|--dropdefault (bool)
+
+index id (array key is the index name)
+|
+|--request (string) (A, D)
+|
+|--rename (string)
+|
+|--indextype (string) (K, I, P, U, UK, UI, FK, FT, FTK, FTI, S, SK, SI, CH)
+|
+|--columns (array of strings)
+|
+|--check (string)
+|
+|--referencetable (string)
+|
+|--referencecolumns (array of strings)
+|  |
+|  |--column (string)
+
+$addArgs
+|
+|--rename (string)</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_TruncateTable">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_TruncateTable">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#761-778">TruncateTable</a>( <span> string <span class="property-name">$table</span> </span>, <span> array <span class="property-name">$addArgs</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the query to truncate a table in database.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_DropTable">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_DropTable">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#789-806">DropTable</a>( <span> string <span class="property-name">$table</span> </span>, <span> array <span class="property-name">$addArgs</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the query to drop a table from database.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_CreateView">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_CreateView">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#819-842">CreateView</a>( <span> string <span class="property-name">$table</span> </span>, <span> array <span class="property-name">$columns</span> = <span class="php-keyword1">array</span> ( )</span>, <span> string <span class="property-name">$viewSelect</span> = <span class="php-keyword1">NULL</span></span>, <span> array <span class="property-name">$addArgs</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the query to create a table in the database. Use below structure to pass parameters.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_DropView">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_DropView">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#853-870">DropView</a>( <span> string <span class="property-name">$table</span> </span>, <span> array <span class="property-name">$addArgs</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the query to drop a view from database.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Insert">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Insert">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#886-906">Insert</a>( <span> string <span class="property-name">$table</span> </span>, <span> mixed <span class="property-name">$values</span> </span>, <span> array <span class="property-name">$addArgs</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the query to insert data in table of database.
+
+column id (array key is the column name) =&gt; value (string)
+|
+|--function (string)</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Update">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Update">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#919-942">Update</a>( <span> string <span class="property-name">$table</span> </span>, <span> array <span class="property-name">$values</span> </span>, <span> array <span class="property-name">$where</span> = <span class="php-keyword1">array</span> ( )</span>, <span> array <span class="property-name">$addArgs</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the query to update data in table of database.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Delete">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Delete">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#954-974">Delete</a>( <span> string <span class="property-name">$table</span> </span>, <span> array <span class="property-name">$where</span> = <span class="php-keyword1">array</span> ( )</span>, <span> array <span class="property-name">$addArgs</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the query to delete data from table of database.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Custom">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Custom">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#984-1001">Custom</a>( <span> string <span class="property-name">$type</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate custom queries.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Query">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Query">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1010-1029">Query</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to query on database.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetResults">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetResults">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1039-1045">GetResults</a>( <span> bool <span class="property-name">$objectType</span> = <span class="php-keyword1">false</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to fetch the results in an array which is retrieved by the provided query from this connection.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetRow">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetRow">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1055-1061">GetRow</a>( <span> bool <span class="property-name">$objectType</span> = <span class="php-keyword1">false</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to fetch the row in an array/object which is retrieved by the provided query from this connection.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetColumn">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetColumn">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1071-1077">GetColumn</a>( <span> bool <span class="property-name">$objectType</span> = <span class="php-keyword1">false</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to fetch the column in an array which is retrieved by the provided query from this connection.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetVar">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetVar">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1086-1092">GetVar</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to fetch the variable which is retrieved by the provided query from this connection.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetColInfo">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetColInfo">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1101-1106">GetColInfo</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to fetch the columns info from last ran query from this connection.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_IsSelect">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                final public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_IsSelect">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1115-1119">IsSelect</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get if the helper contains select query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Meta">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                abstract public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Meta">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1130">Meta</a>( <span> string <span class="property-name">$metaFunction</span> </span>, <span> array <span class="property-name">$args</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to resolve meta SQL provided.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GenCustom">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                abstract protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GenCustom">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1141">GenCustom</a>( <span> string <span class="property-name">$type</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate custom queries for a specific type of helper by implementing custom methods.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetSelect">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                abstract protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetSelect">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1151">RetSelect</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the select query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetCheckTable">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                abstract protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetCheckTable">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1161">RetCheckTable</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the check table query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetCreateTable">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                abstract protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetCreateTable">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1171">RetCreateTable</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the create table query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetAutoIncrement">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetAutoIncrement">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1182-1191">RetAutoIncrement</a>( <span> string <span class="property-name">$column</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the autoincrement query for the corresponding create table.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetAlterTable">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                abstract protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetAlterTable">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1201">RetAlterTable</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the alter table query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetTruncateTable">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                abstract protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetTruncateTable">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1211">RetTruncateTable</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the truncate table query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetDropTable">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                abstract protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetDropTable">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1221">RetDropTable</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the drop table query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetCreateView">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                abstract protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetCreateView">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1231">RetCreateView</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the create/replace view query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetDropView">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                abstract protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetDropView">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1241">RetDropView</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the drop view query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetInsert">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                abstract protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetInsert">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1251">RetInsert</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the insert query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetUpdate">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                abstract protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetUpdate">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1261">RetUpdate</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the update query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetDelete">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                abstract protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetDelete">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1271">RetDelete</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the delete query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_ResolveMeta">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_ResolveMeta">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.DBQueryHelper.html#1281-1396">ResolveMeta</a>( <span> string <span class="property-name">$query</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to resolve meta SQL in the query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+        </ul>
+        </div>
+
+
+
+
+
+        <div class="card" id="properties">
+        <div class="card-header">
+            <h4><strong>Properties Summary</strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+<li class="list-group-item name ">
+    <div id="$connection">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            <a href="interface-FluitoPHP.Database.DBConnectionHelper.html">FluitoPHP\Database\DBConnectionHelper</a>
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#95" class="property-name">$connection</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the type of query to be generated.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$connection" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$tables">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#131" class="property-name">$tables</a>
+        </code>
+        <div class="description">
+            <pre>Used to store required tables and their joining criteria.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$tables" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$distinct">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            bool
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#140" class="property-name">$distinct</a>
+        </code>
+        <div class="description">
+            <pre>Used to store distinct criteria.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$distinct" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">false</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$columns">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#149" class="property-name">$columns</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the columns to be fetched.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$columns" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$where">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#158" class="property-name">$where</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the where clauses.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$where" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$group">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#167" class="property-name">$group</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the group by columns.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$group" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$having">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#176" class="property-name">$having</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the having clauses.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$having" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$order">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#185" class="property-name">$order</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the order columns.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$order" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$perpage">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            int
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#194" class="property-name">$perpage</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the per page count.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$perpage" class="anchor float-right">#</a>
+            <code>-<span class="php-num">1</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$page">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            int
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#203" class="property-name">$page</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the page number.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$page" class="anchor float-right">#</a>
+            <code><span class="php-num">1</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$values">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            mixed
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#212" class="property-name">$values</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the rows of values to be inserted in the table. Format array or \FluitoPHP\Database\DBQueryHelper.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$values" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$indexes">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#221" class="property-name">$indexes</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the indexes/keys/foreign keys that needs to be created.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$indexes" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$viewSelect">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            <a href="class-FluitoPHP.Database.DBQueryHelper.html">FluitoPHP\Database\DBQueryHelper</a>
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#230" class="property-name">$viewSelect</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the select clause of the create view statement.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$viewSelect" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$temporary">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#239" class="property-name">$temporary</a>
+        </code>
+        <div class="description">
+            <pre>Used to store if the new table needs to be created is a normal table or temporary table.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$temporary" class="anchor float-right">#</a>
+            <code><span class="php-quote">'N'</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$reqAutoIncrement">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            bool
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#248" class="property-name">$reqAutoIncrement</a>
+        </code>
+        <div class="description">
+            <pre>Used to store if the new table needs to create autoincrement column separately.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$reqAutoIncrement" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">false</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$addArgs">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Database.DBQueryHelper.html#257" class="property-name">$addArgs</a>
+        </code>
+        <div class="description">
+            <pre>Used to store additional database specific arguments.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$addArgs" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+        </ul>
+        </div>
+
+
+    <div id="footer">
+        Thanks to <a href="https://github.com/apigen/apigen">ApiGen</a>
+    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="resources/jquery-3.2.1.min.js"></script>
+        <script src="resources/jquery-ui-1.12.1.min.js"></script>
+
+        <script src="elementlist.js"></script>
+        <script src="resources/main.js"></script>
+    </body>
+</html>
+
+

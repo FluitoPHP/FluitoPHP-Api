@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/style.css">
+
+        <title>
+            Class FluitoPHP\Database\Mysql\MysqlQueryHelper | FluitoPHP
+        </title>
+    </head>
+
+    <body class="FluitoPHP-API">
+<div id="navigation" class="bg-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a href="index.html">
+                        FluitoPHP
+                    </a>
+                </li>
+
+                    <li class="nav-item ">
+                        <a href="classes.html">Classes</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="interfaces.html">Interfaces</a>
+                    </li>
+
+
+
+                    <li class="nav-item ">
+                        <a href="exceptions.html">Exceptions</a>
+                    </li>
+
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-todo.html">
+                            @Todo
+                        </a>
+                    </li>
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-deprecated.html">
+                            @Deprecated
+                        </a>
+                    </li>
+            </ul>
+
+            <form id="search" class="form-inline my-2 my-lg-0 float-right">
+                <input type="text" name="q" class="form-control text" placeholder="Search class, function or namespace" autofocus>
+            </form>
+        </nav>
+    </div>
+</div>
+            <div id="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+<div class="float-left type breadcrumb">
+    <span class="badge badge-success">Class</span>
+</div>
+
+<nav class="float-left" aria-label="breadcrumb" role="navigation">
+<ol class="breadcrumb pull-left">
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.html">FluitoPHP</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.Database.html">Database</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.Database.Mysql.html">Mysql</a>
+        </li>
+
+        <li class="breadcrumb-item active" aria-current="page">MysqlQueryHelper</li>
+</ol>
+</nav>                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+    <h2 class="mt-3 mb-3 ">MysqlQueryHelper</h2>
+
+        <div class="card">
+            <div class="card-body">
+                <pre>MysqlQueryHelper class.
+
+This class is used to generate queries for a mysql database instance.
+
+Variables:
+
+Functions:
+     1. __construct
+     2. WhereClause
+     3. GenCustom
+     4. RetSelect
+     5. RetCheckTable
+     6. RetCreateTable
+     7. RetAlterTable
+     8. RetTruncateTable
+     9. RetDropTable
+     10. RetCreateView
+     11. RetDropView
+     12. RetInsert
+     13. RetUpdate
+     14. RetDelete
+     15. Meta</pre>
+            </div>
+        </div>
+
+        <dl class="tree">
+            <dd>
+                    extends
+                    <a href="class-FluitoPHP.Database.DBQueryHelper.html">
+                        FluitoPHP\Database\DBQueryHelper
+                    </a>
+
+
+            </dd>
+        </dl>
+
+
+
+    <div class="info">
+        
+
+            <br>
+            <br>
+            <a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html" class="open-source-code">Open source code</a>
+        <br>
+    </div>
+
+        <div class="card" id="methods">
+        <div class="card-header">
+            <h4><strong>Methods Summary</strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+
+
+
+<li class="list-group-item name ">
+    <div id="___construct">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#___construct">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html#55-58">__construct</a>( <span> \FluitoPHP\Database\Mysql\MysqlConnectionHelper <span class="property-name">$connection</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to initiate query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+                        <h5>Overrides</h5>
+                        <div>
+                            <code>
+                                <a href="class-FluitoPHP.Database.DBQueryHelper.html#___construct">
+                                    FluitoPHP\Database\DBQueryHelper::__construct()
+                                </a>
+                            </code>
+                        </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_WhereClause">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_WhereClause">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html#69-216">WhereClause</a>( <span> array <span class="property-name">$conditions</span> = <span class="php-keyword1">array</span> ( )</span>, <span> int <span class="property-name">$type</span> = <span class="php-num">0</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate where/on/having clause.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GenCustom">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GenCustom">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html#227-230">GenCustom</a>( <span> string <span class="property-name">$type</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate custom queries for a specific type of helper by implementing custom methods.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetSelect">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetSelect">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html#240-527">RetSelect</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the select query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetCheckTable">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetCheckTable">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html#537-547">RetCheckTable</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the check table query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetCreateTable">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetCreateTable">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html#557-767">RetCreateTable</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the create table query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetAlterTable">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetAlterTable">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html#777-1190">RetAlterTable</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the alter table query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetTruncateTable">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetTruncateTable">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html#1200-1210">RetTruncateTable</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the truncate table query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetDropTable">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetDropTable">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html#1220-1238">RetDropTable</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the drop table query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetCreateView">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetCreateView">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html#1248-1280">RetCreateView</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the create/replace view query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetDropView">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetDropView">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html#1290-1304">RetDropView</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the drop view query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetInsert">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetInsert">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html#1314-1439">RetInsert</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the insert query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetUpdate">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetUpdate">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html#1449-1497">RetUpdate</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the update query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RetDelete">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RetDelete">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html#1507-1527">RetDelete</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the delete query.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Meta">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Meta">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Database.Mysql.MysqlQueryHelper.html#1538-1706">Meta</a>( <span> string <span class="property-name">$metaFunction</span> </span>, <span> array <span class="property-name">$args</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to resolve meta SQL provided.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+        </ul>
+        </div>
+
+        <div class="card" id="inherits">
+        <div class="card-header">
+            <h4><strong>Methods inherited from <a href="class-FluitoPHP.Database.DBQueryHelper.html#methods">FluitoPHP\Database\DBQueryHelper</a></strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#___construct">__construct()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_Generate">Generate()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_Select">Select()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_CheckTable">CheckTable()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_CreateTable">CreateTable()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_AlterTable">AlterTable()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_TruncateTable">TruncateTable()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_DropTable">DropTable()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_CreateView">CreateView()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_DropView">DropView()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_Insert">Insert()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_Update">Update()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_Delete">Delete()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_Custom">Custom()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_Query">Query()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_GetResults">GetResults()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_GetRow">GetRow()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_GetColumn">GetColumn()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_GetVar">GetVar()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_GetColInfo">GetColInfo()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_IsSelect">IsSelect()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_Meta">Meta()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_GenCustom">GenCustom()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_RetSelect">RetSelect()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_RetCheckTable">RetCheckTable()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_RetCreateTable">RetCreateTable()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_RetAutoIncrement">RetAutoIncrement()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_RetAlterTable">RetAlterTable()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_RetTruncateTable">RetTruncateTable()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_RetDropTable">RetDropTable()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_RetCreateView">RetCreateView()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_RetDropView">RetDropView()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_RetInsert">RetInsert()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_RetUpdate">RetUpdate()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_RetDelete">RetDelete()</a></code>, 
+                        <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#_ResolveMeta">ResolveMeta()</a></code>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+            <div class="card" id="properties-inherited">
+        <div class="card-header">
+            <h4><strong>Properties inherited from <a href="class-FluitoPHP.Database.DBQueryHelper.html#properties">FluitoPHP\Database\DBQueryHelper</a></strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item name">
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$connection" class="property-name">$connection</a></code>, 
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$tables" class="property-name">$tables</a></code>, 
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$distinct" class="property-name">$distinct</a></code>, 
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$columns" class="property-name">$columns</a></code>, 
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$where" class="property-name">$where</a></code>, 
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$group" class="property-name">$group</a></code>, 
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$having" class="property-name">$having</a></code>, 
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$order" class="property-name">$order</a></code>, 
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$perpage" class="property-name">$perpage</a></code>, 
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$page" class="property-name">$page</a></code>, 
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$values" class="property-name">$values</a></code>, 
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$indexes" class="property-name">$indexes</a></code>, 
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$viewSelect" class="property-name">$viewSelect</a></code>, 
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$temporary" class="property-name">$temporary</a></code>, 
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$reqAutoIncrement" class="property-name">$reqAutoIncrement</a></code>, 
+                            <code><a href="class-FluitoPHP.Database.DBQueryHelper.html#$addArgs" class="property-name">$addArgs</a></code>
+                    </li>
+                </ul>
+        </div>
+
+    <div id="footer">
+        Thanks to <a href="https://github.com/apigen/apigen">ApiGen</a>
+    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="resources/jquery-3.2.1.min.js"></script>
+        <script src="resources/jquery-ui-1.12.1.min.js"></script>
+
+        <script src="elementlist.js"></script>
+        <script src="resources/main.js"></script>
+    </body>
+</html>
+
+

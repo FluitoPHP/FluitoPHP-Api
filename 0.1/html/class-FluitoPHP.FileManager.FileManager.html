@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/style.css">
+
+        <title>
+            Class FluitoPHP\FileManager\FileManager | FluitoPHP
+        </title>
+    </head>
+
+    <body class="FluitoPHP-API">
+<div id="navigation" class="bg-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a href="index.html">
+                        FluitoPHP
+                    </a>
+                </li>
+
+                    <li class="nav-item ">
+                        <a href="classes.html">Classes</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="interfaces.html">Interfaces</a>
+                    </li>
+
+
+
+                    <li class="nav-item ">
+                        <a href="exceptions.html">Exceptions</a>
+                    </li>
+
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-todo.html">
+                            @Todo
+                        </a>
+                    </li>
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-deprecated.html">
+                            @Deprecated
+                        </a>
+                    </li>
+            </ul>
+
+            <form id="search" class="form-inline my-2 my-lg-0 float-right">
+                <input type="text" name="q" class="form-control text" placeholder="Search class, function or namespace" autofocus>
+            </form>
+        </nav>
+    </div>
+</div>
+            <div id="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+<div class="float-left type breadcrumb">
+    <span class="badge badge-success">Class</span>
+</div>
+
+<nav class="float-left" aria-label="breadcrumb" role="navigation">
+<ol class="breadcrumb pull-left">
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.html">FluitoPHP</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.FileManager.html">FileManager</a>
+        </li>
+
+        <li class="breadcrumb-item active" aria-current="page">FileManager</li>
+</ol>
+</nav>                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+    <h2 class="mt-3 mb-3 ">FileManager</h2>
+
+        <div class="card">
+            <div class="card-body">
+                <pre>Description of FileManager
+
+Constants:
+     1. UPLOAD_NO_POST
+     2. UPLOAD_INVALID_FILE_ID
+     3. UPLOAD_FILE_ID_NOT_FOUND
+     4. UPLOAD_FILE_MIME_NO_MATCH
+     5. UPLOAD_FILE_EXCEEDS_MAX_SIZE
+     6. UPLOAD_FILE_BELOW_MIN_SIZE
+     7. UPLOAD_FILE_MIME_RESTRICTED
+
+Variables:
+     1. $basePath
+     2. $defaultPath
+     3. $URLTrimPath
+     4. $URLPrefix
+     5. $thumbURLTrimPath
+     6. $thumbURLPrefix
+     7. $filesConfig
+     8. $restrictedMimes
+
+Functions:
+     1. __construct
+     2. ListPath
+     3. Upload
+     4. MoveUploadedFile
+     5. Delete
+     6. DeleteDirectory
+     7. Copy
+     8. CopyDirectory
+     9. Move
+     10. Rename
+     11. GetBasePath
+     12. GetPathInfo
+     13. GetBreadcrumbInfo
+     14. CreateDirectory</pre>
+            </div>
+        </div>
+
+
+
+
+    <div class="info">
+        
+
+            <br>
+            <br>
+            <a href="source-class-FluitoPHP.FileManager.FileManager.html" class="open-source-code">Open source code</a>
+        <br>
+    </div>
+
+        <div class="card" id="methods">
+        <div class="card-header">
+            <h4><strong>Methods Summary</strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+
+
+
+<li class="list-group-item name ">
+    <div id="___construct">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#___construct">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.FileManager.FileManager.html#206-309">__construct</a>( <span> array <span class="property-name">$config</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to initialize the class.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_ListPath">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_ListPath">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.FileManager.FileManager.html#322-382">ListPath</a>( <span> string <span class="property-name">$subPath</span> = <span class="php-quote">''</span></span>, <span> array <span class="property-name">$extensions</span> = <span class="php-keyword1">array</span> ( )</span>, <span> bool <span class="property-name">$listDirectories</span> = <span class="php-keyword1">true</span></span>, <span> bool <span class="property-name">$showHidden</span> = <span class="php-keyword1">false</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to list contents of a directory.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Upload">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Upload">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.FileManager.FileManager.html#397-513">Upload</a>( <span> string <span class="property-name">$id</span> </span>, <span> string <span class="property-name">$name</span> = <span class="php-quote">''</span></span>, <span> string <span class="property-name">$subPath</span> = <span class="php-quote">''</span></span>, <span> array <span class="property-name">$validMimes</span> = <span class="php-keyword1">array</span> ( )</span>, <span> int <span class="property-name">$maxSize</span> = <span class="php-num">0</span></span>, <span> int <span class="property-name">$minSize</span> = <span class="php-num">0</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to save the uploaded file.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_MoveUploadedFile">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_MoveUploadedFile">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.FileManager.FileManager.html#525-614">MoveUploadedFile</a>( <span> string <span class="property-name">$tmpFileName</span> </span>, <span> string <span class="property-name">$saveName</span> </span>, <span> string <span class="property-name">$subPath</span> = <span class="php-quote">''</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to move the uploaded the file.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Delete">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Delete">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.FileManager.FileManager.html#624-685">Delete</a>( <span> mixed <span class="property-name">$files</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to delete files.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_DeleteDirectory">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_DeleteDirectory">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.FileManager.FileManager.html#695-724">DeleteDirectory</a>( <span> string <span class="property-name">$folder</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to delete a directory recursively.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Copy">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Copy">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.FileManager.FileManager.html#735-848">Copy</a>( <span> mixed <span class="property-name">$files</span> </span>, <span> string <span class="property-name">$subPath</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to copy files.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_CopyDirectory">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_CopyDirectory">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.FileManager.FileManager.html#859-893">CopyDirectory</a>( <span> string <span class="property-name">$source</span> </span>, <span> string <span class="property-name">$destination</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to copy a directory recursively.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Move">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Move">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.FileManager.FileManager.html#904-1013">Move</a>( <span> mixed <span class="property-name">$files</span> </span>, <span> string <span class="property-name">$subPath</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to move files.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Rename">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Rename">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.FileManager.FileManager.html#1025-1066">Rename</a>( <span> mixed <span class="property-name">$file</span> </span>, <span> string <span class="property-name">$newName</span> </span>, <span> bool <span class="property-name">$changeExtn</span> = <span class="php-keyword1">false</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to rename a file.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetBasePath">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetBasePath">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.FileManager.FileManager.html#1075-1079">GetBasePath</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get the base path of the file manager.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetPathInfo">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetPathInfo">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.FileManager.FileManager.html#1092-1207">GetPathInfo</a>( <span> string <span class="property-name">$subPath</span> = <span class="php-quote">''</span></span>, <span> array <span class="property-name">$extensions</span> = <span class="php-keyword1">array</span> ( )</span>, <span> bool <span class="property-name">$listDirectories</span> = <span class="php-keyword1">true</span></span>, <span> bool <span class="property-name">$showHidden</span> = <span class="php-keyword1">false</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to get list of attributes for a given subpath.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetBreadcrumbInfo">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetBreadcrumbInfo">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.FileManager.FileManager.html#1220-1262">GetBreadcrumbInfo</a>( <span> string <span class="property-name">$subPath</span> = <span class="php-quote">''</span></span>, <span> array <span class="property-name">$extensions</span> = <span class="php-keyword1">array</span> ( )</span>, <span> bool <span class="property-name">$listDirectories</span> = <span class="php-keyword1">true</span></span>, <span> bool <span class="property-name">$showHidden</span> = <span class="php-keyword1">false</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to get list of breadcrumbs for a given subpath.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_CreateDirectory">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_CreateDirectory">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.FileManager.FileManager.html#1273-1327">CreateDirectory</a>( <span> string <span class="property-name">$directoryName</span> </span>, <span> string <span class="property-name">$subPath</span> = <span class="php-quote">''</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to create a new directory.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+        </ul>
+        </div>
+
+
+
+        <div class="card" id="constants">
+        <div class="card-header">
+            <h4><strong>Constants Summary</strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+<li class="list-group-item name ">
+    <div id="UPLOAD_NO_POST">
+        <div class="row no-gutters">
+            <div class="item-attrib col-2">
+                <code class="keyword">
+                    public
+                    
+                    
+                    int
+                </code>
+            </div>
+            <div class="item-name col-8">
+                <code>
+                    <a href="source-class-FluitoPHP.FileManager.FileManager.html#68" class="constant-name">UPLOAD_NO_POST</a>
+                </code>
+
+                <div class="description">
+                    <pre>Used when the Upload method is triggered and the request is not of POST type.
+<br>
+<br>
+</pre>
+            </div>
+        </div>
+        <div class="item-value col-2">
+            <div>
+                <a href="#UPLOAD_NO_POST" class="anchor float-right">#</a>
+                <code><span class="php-num">100</span></code>
+            </div>
+        </div>
+    </div>
+</div>
+</li>
+<li class="list-group-item name ">
+    <div id="UPLOAD_INVALID_FILE_ID">
+        <div class="row no-gutters">
+            <div class="item-attrib col-2">
+                <code class="keyword">
+                    public
+                    
+                    
+                    int
+                </code>
+            </div>
+            <div class="item-name col-8">
+                <code>
+                    <a href="source-class-FluitoPHP.FileManager.FileManager.html#76" class="constant-name">UPLOAD_INVALID_FILE_ID</a>
+                </code>
+
+                <div class="description">
+                    <pre>Used when an invalid identifier is provided to the Upload method.
+<br>
+<br>
+</pre>
+            </div>
+        </div>
+        <div class="item-value col-2">
+            <div>
+                <a href="#UPLOAD_INVALID_FILE_ID" class="anchor float-right">#</a>
+                <code><span class="php-num">101</span></code>
+            </div>
+        </div>
+    </div>
+</div>
+</li>
+<li class="list-group-item name ">
+    <div id="UPLOAD_FILE_ID_NOT_FOUND">
+        <div class="row no-gutters">
+            <div class="item-attrib col-2">
+                <code class="keyword">
+                    public
+                    
+                    
+                    int
+                </code>
+            </div>
+            <div class="item-name col-8">
+                <code>
+                    <a href="source-class-FluitoPHP.FileManager.FileManager.html#84" class="constant-name">UPLOAD_FILE_ID_NOT_FOUND</a>
+                </code>
+
+                <div class="description">
+                    <pre>Used when the uploaded file with identifier is not found.
+<br>
+<br>
+</pre>
+            </div>
+        </div>
+        <div class="item-value col-2">
+            <div>
+                <a href="#UPLOAD_FILE_ID_NOT_FOUND" class="anchor float-right">#</a>
+                <code><span class="php-num">102</span></code>
+            </div>
+        </div>
+    </div>
+</div>
+</li>
+<li class="list-group-item name ">
+    <div id="UPLOAD_FILE_MIME_NO_MATCH">
+        <div class="row no-gutters">
+            <div class="item-attrib col-2">
+                <code class="keyword">
+                    public
+                    
+                    
+                    int
+                </code>
+            </div>
+            <div class="item-name col-8">
+                <code>
+                    <a href="source-class-FluitoPHP.FileManager.FileManager.html#92" class="constant-name">UPLOAD_FILE_MIME_NO_MATCH</a>
+                </code>
+
+                <div class="description">
+                    <pre>Used when file mime type do not match in mime types provided to the Upload method.
+<br>
+<br>
+</pre>
+            </div>
+        </div>
+        <div class="item-value col-2">
+            <div>
+                <a href="#UPLOAD_FILE_MIME_NO_MATCH" class="anchor float-right">#</a>
+                <code><span class="php-num">103</span></code>
+            </div>
+        </div>
+    </div>
+</div>
+</li>
+<li class="list-group-item name ">
+    <div id="UPLOAD_FILE_EXCEEDS_MAX_SIZE">
+        <div class="row no-gutters">
+            <div class="item-attrib col-2">
+                <code class="keyword">
+                    public
+                    
+                    
+                    int
+                </code>
+            </div>
+            <div class="item-name col-8">
+                <code>
+                    <a href="source-class-FluitoPHP.FileManager.FileManager.html#100" class="constant-name">UPLOAD_FILE_EXCEEDS_MAX_SIZE</a>
+                </code>
+
+                <div class="description">
+                    <pre>Used when file size is greater than max size provided to the Upload method.
+<br>
+<br>
+</pre>
+            </div>
+        </div>
+        <div class="item-value col-2">
+            <div>
+                <a href="#UPLOAD_FILE_EXCEEDS_MAX_SIZE" class="anchor float-right">#</a>
+                <code><span class="php-num">104</span></code>
+            </div>
+        </div>
+    </div>
+</div>
+</li>
+<li class="list-group-item name ">
+    <div id="UPLOAD_FILE_BELOW_MIN_SIZE">
+        <div class="row no-gutters">
+            <div class="item-attrib col-2">
+                <code class="keyword">
+                    public
+                    
+                    
+                    int
+                </code>
+            </div>
+            <div class="item-name col-8">
+                <code>
+                    <a href="source-class-FluitoPHP.FileManager.FileManager.html#108" class="constant-name">UPLOAD_FILE_BELOW_MIN_SIZE</a>
+                </code>
+
+                <div class="description">
+                    <pre>Used when file size is smaller than min size provided to the Upload method.
+<br>
+<br>
+</pre>
+            </div>
+        </div>
+        <div class="item-value col-2">
+            <div>
+                <a href="#UPLOAD_FILE_BELOW_MIN_SIZE" class="anchor float-right">#</a>
+                <code><span class="php-num">105</span></code>
+            </div>
+        </div>
+    </div>
+</div>
+</li>
+<li class="list-group-item name ">
+    <div id="UPLOAD_FILE_MIME_RESTRICTED">
+        <div class="row no-gutters">
+            <div class="item-attrib col-2">
+                <code class="keyword">
+                    public
+                    
+                    
+                    int
+                </code>
+            </div>
+            <div class="item-name col-8">
+                <code>
+                    <a href="source-class-FluitoPHP.FileManager.FileManager.html#116" class="constant-name">UPLOAD_FILE_MIME_RESTRICTED</a>
+                </code>
+
+                <div class="description">
+                    <pre>Used when the mime of the file matches restricted mime types.
+<br>
+<br>
+</pre>
+            </div>
+        </div>
+        <div class="item-value col-2">
+            <div>
+                <a href="#UPLOAD_FILE_MIME_RESTRICTED" class="anchor float-right">#</a>
+                <code><span class="php-num">106</span></code>
+            </div>
+        </div>
+    </div>
+</div>
+</li>
+            </ul>
+        </div>
+
+
+        <div class="card" id="properties">
+        <div class="card-header">
+            <h4><strong>Properties Summary</strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+<li class="list-group-item name ">
+    <div id="$basePath">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.FileManager.FileManager.html#125" class="property-name">$basePath</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the base path of the directory.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$basePath" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$defaultPath">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.FileManager.FileManager.html#134" class="property-name">$defaultPath</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the default path and used if the path provided to the constructor is not valid.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$defaultPath" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$URLTrimPath">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.FileManager.FileManager.html#143" class="property-name">$URLTrimPath</a>
+        </code>
+        <div class="description">
+            <pre>Used to trim the path of the file for URL Generation.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$URLTrimPath" class="anchor float-right">#</a>
+            <code><span class="php-quote">''</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$URLPrefix">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.FileManager.FileManager.html#152" class="property-name">$URLPrefix</a>
+        </code>
+        <div class="description">
+            <pre>Used to append to the path of the file for URL Generation.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$URLPrefix" class="anchor float-right">#</a>
+            <code><span class="php-quote">''</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$thumbURLTrimPath">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.FileManager.FileManager.html#161" class="property-name">$thumbURLTrimPath</a>
+        </code>
+        <div class="description">
+            <pre>Used to trim the path of the file for thumbnail URL Generation.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$thumbURLTrimPath" class="anchor float-right">#</a>
+            <code><span class="php-quote">''</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$thumbURLPrefix">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.FileManager.FileManager.html#170" class="property-name">$thumbURLPrefix</a>
+        </code>
+        <div class="description">
+            <pre>Used to append to the path of the file for thumbnail URL Generation.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$thumbURLPrefix" class="anchor float-right">#</a>
+            <code><span class="php-quote">''</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$filesConfig">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected static
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.FileManager.FileManager.html#179" class="property-name">$filesConfig</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the files configuration.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$filesConfig" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$restrictedMimes">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected static
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.FileManager.FileManager.html#188-191" class="property-name">$restrictedMimes</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the restricted mime types.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$restrictedMimes" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+  <span class="php-num">0</span> =&gt; <span class="php-quote">'application/x-msdownload'</span>,
+  <span class="php-num">1</span> =&gt; <span class="php-quote">'application/x-dosexec'</span>,
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+        </ul>
+        </div>
+
+
+    <div id="footer">
+        Thanks to <a href="https://github.com/apigen/apigen">ApiGen</a>
+    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="resources/jquery-3.2.1.min.js"></script>
+        <script src="resources/jquery-ui-1.12.1.min.js"></script>
+
+        <script src="elementlist.js"></script>
+        <script src="resources/main.js"></script>
+    </body>
+</html>
+
+

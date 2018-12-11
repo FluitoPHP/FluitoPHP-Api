@@ -1,0 +1,1967 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/style.css">
+
+        <title>
+            Class FluitoPHP\Mail\Mail | FluitoPHP
+        </title>
+    </head>
+
+    <body class="FluitoPHP-API">
+<div id="navigation" class="bg-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a href="index.html">
+                        FluitoPHP
+                    </a>
+                </li>
+
+                    <li class="nav-item ">
+                        <a href="classes.html">Classes</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="interfaces.html">Interfaces</a>
+                    </li>
+
+
+
+                    <li class="nav-item ">
+                        <a href="exceptions.html">Exceptions</a>
+                    </li>
+
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-todo.html">
+                            @Todo
+                        </a>
+                    </li>
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-deprecated.html">
+                            @Deprecated
+                        </a>
+                    </li>
+            </ul>
+
+            <form id="search" class="form-inline my-2 my-lg-0 float-right">
+                <input type="text" name="q" class="form-control text" placeholder="Search class, function or namespace" autofocus>
+            </form>
+        </nav>
+    </div>
+</div>
+            <div id="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+<div class="float-left type breadcrumb">
+    <span class="badge badge-success">Class</span>
+</div>
+
+<nav class="float-left" aria-label="breadcrumb" role="navigation">
+<ol class="breadcrumb pull-left">
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.html">FluitoPHP</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.Mail.html">Mail</a>
+        </li>
+
+        <li class="breadcrumb-item active" aria-current="page">Mail</li>
+</ol>
+</nav>                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+    <h2 class="mt-3 mb-3 ">Mail</h2>
+
+        <div class="card">
+            <div class="card-body">
+                <pre>Mail Class.
+
+This class is for sending email.
+
+Variables:
+     1. $mailTo
+     2. $mailCc
+     3. $mailBcc
+     4. $mailFrom
+     5. $replyTo
+     6. $mailSubject
+     7. $mailMessagePlain
+     8. $mailMessageHTML
+     9. $mailMessageCalender
+     10. $mailHeaders
+     11. $mailAttachments
+     12. $mailImages
+     13. $mailParameters
+     14. $config
+     15. $mailConfig
+     16. $appConfig
+     17. $boundaryMixed
+     18. $boundaryAlternative
+     19. $boundaryRelated
+     20. $validEncodings
+     21. $defaultEncoding
+
+Functions:
+     1. __construct
+     2. ValidateEmails
+     3. ValidateEmail
+     4. To
+     5. Cc
+     6. Bcc
+     7. From
+     8. ReplyTo
+     9. Subject
+     10. PlainMessage
+     11. HTMLMessage
+     12. CalenderMessage
+     13. Header
+     14. Attachment
+     15. Image
+     16. Parameter
+     17. Send
+     18. GenerateTo
+     19. GenerateHeaders
+     20. GenerateNameChunk
+     21. GenerateTextChunk
+     22. GenerateImageBlock
+     23. GenerateAttachmentBlock
+     24. GeneratePlainBlock
+     25. GenerateHTMLBlock
+     26. GenerateCalenderBlock
+     27. GenerateBody</pre>
+            </div>
+        </div>
+
+
+
+
+    <div class="info">
+        
+
+            <br>
+            <br>
+            <a href="source-class-FluitoPHP.Mail.Mail.html" class="open-source-code">Open source code</a>
+        <br>
+    </div>
+
+        <div class="card" id="methods">
+        <div class="card-header">
+            <h4><strong>Methods Summary</strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+
+
+
+<li class="list-group-item name ">
+    <div id="___construct">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#___construct">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#310-384">__construct</a>( <span> array <span class="property-name">$config</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to initialize the class.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_ValidateEmail">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_ValidateEmail">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#433-476">ValidateEmail</a>( <span> string <span class="property-name">$email</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to validate an email.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_AddTo">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_AddTo">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#486-498">AddTo</a>( <span> array <span class="property-name">$mailTo</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to add a new recipient.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_AddCc">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_AddCc">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#508-520">AddCc</a>( <span> array <span class="property-name">$mailCc</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to add a new CC receiver.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_AddBcc">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_AddBcc">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#530-542">AddBcc</a>( <span> array <span class="property-name">$mailBcc</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to add a new BCC receiver.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_From">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_From">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#552-570">From</a>( <span> string <span class="property-name">$mailFrom</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to update or get sender email and name.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_ReplyTo">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_ReplyTo">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#580-598">ReplyTo</a>( <span> string <span class="property-name">$replyTo</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to update or get reply to email.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Subject">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Subject">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#608-620">Subject</a>( <span> string <span class="property-name">$mailSubject</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to update or get mail subject.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_PlainMessage">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_PlainMessage">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#630-642">PlainMessage</a>( <span> string <span class="property-name">$mailMessagePlain</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to update or get mail plain message.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_HTMLMessage">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_HTMLMessage">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#652-664">HTMLMessage</a>( <span> string <span class="property-name">$mailMessageHTML</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to update or get mail html message.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_CalenderMessage">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_CalenderMessage">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#674-686">CalenderMessage</a>( <span> string <span class="property-name">$mailMessageCalender</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to update or get mail calender message.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Header">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Header">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#696-757">Header</a>( <span> array <span class="property-name">$mailHeaders</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to add the email headers.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Attachment">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Attachment">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#769-829">Attachment</a>( <span> string <span class="property-name">$mailAttachment</span> </span>, <span> string <span class="property-name">$name</span> = <span class="php-quote">''</span></span>, <span> array <span class="property-name">$parms</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to add the email attachments.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Image">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Image">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#841-890">Image</a>( <span> string <span class="property-name">$mailImage</span> </span>, <span> string <span class="property-name">$name</span> = <span class="php-quote">''</span></span>, <span> array <span class="property-name">$parms</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to add the email images.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Parameters">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Parameters">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#900-912">Parameters</a>( <span> string <span class="property-name">$mailParameters</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to update or get mail parameters.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Send">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Send">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#921-930">Send</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to send the email.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GenerateTo">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GenerateTo">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#939-949">GenerateTo</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the comma separated recipients emails.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GenerateHeaders">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GenerateHeaders">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#958-1149">GenerateHeaders</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the headers in string format.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GenerateNameChunk">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GenerateNameChunk">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#1161-1206">GenerateNameChunk</a>( <span> string <span class="property-name">$pathOrName</span> </span>, <span> string <span class="property-name">$encoding</span> = <span class="php-quote">'US-ASCII'</span></span>, <span> string <span class="property-name">$type</span> = <span class="php-quote">'name'</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to chunk the name of the file.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GenerateTextChunk">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GenerateTextChunk">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#1217-1271">GenerateTextChunk</a>( <span> string <span class="property-name">$text</span> </span>, <span> string <span class="property-name">$encoding</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to chunk the text string.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GenerateImageBlock">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GenerateImageBlock">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#1280-1334">GenerateImageBlock</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate image block for mail.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GenerateAttachmentBlock">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GenerateAttachmentBlock">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#1343-1395">GenerateAttachmentBlock</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate attachment block for mail.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GeneratePlainBlock">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GeneratePlainBlock">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#1404-1424">GeneratePlainBlock</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the plain text block of the mail.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GenerateHTMLBlock">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GenerateHTMLBlock">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#1433-1453">GenerateHTMLBlock</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the html text block of the mail.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GenerateCalenderBlock">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GenerateCalenderBlock">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#1462-1483">GenerateCalenderBlock</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the calender text block of the mail.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GenerateBody">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GenerateBody">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Mail.Mail.html#1492-1760">GenerateBody</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the message body.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+        </ul>
+        </div>
+
+
+
+
+
+        <div class="card" id="properties">
+        <div class="card-header">
+            <h4><strong>Properties Summary</strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+<li class="list-group-item name ">
+    <div id="$mailTo">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#88" class="property-name">$mailTo</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the recipients of the email.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$mailTo" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$mailCc">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#97" class="property-name">$mailCc</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the CC recipients of the email.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$mailCc" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$mailBcc">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#106" class="property-name">$mailBcc</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the BCC recipients of the email.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$mailBcc" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$mailFrom">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#115" class="property-name">$mailFrom</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the sender of the email.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$mailFrom" class="anchor float-right">#</a>
+            <code><span class="php-quote">''</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$replyTo">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#124" class="property-name">$replyTo</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the reply to email address.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$replyTo" class="anchor float-right">#</a>
+            <code><span class="php-quote">''</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$mailSubject">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#133" class="property-name">$mailSubject</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the subject of the email.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$mailSubject" class="anchor float-right">#</a>
+            <code><span class="php-quote">''</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$mailMessagePlain">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#142" class="property-name">$mailMessagePlain</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the message of the email.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$mailMessagePlain" class="anchor float-right">#</a>
+            <code><span class="php-quote">''</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$mailMessageHTML">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#151" class="property-name">$mailMessageHTML</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the message of the email.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$mailMessageHTML" class="anchor float-right">#</a>
+            <code><span class="php-quote">''</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$mailMessageCalender">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#160" class="property-name">$mailMessageCalender</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the message of the email.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$mailMessageCalender" class="anchor float-right">#</a>
+            <code><span class="php-quote">''</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$mailHeaders">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#169" class="property-name">$mailHeaders</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the email headers.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$mailHeaders" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$mailAttachments">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#178" class="property-name">$mailAttachments</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the files that needs to be attached to the email.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$mailAttachments" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$mailImages">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#187" class="property-name">$mailImages</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the images that needs to be attached to the email.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$mailImages" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$mailParameters">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#196" class="property-name">$mailParameters</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the parameters if required for sendmail executable.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$mailParameters" class="anchor float-right">#</a>
+            <code><span class="php-quote">''</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$config">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#205-214" class="property-name">$config</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the basic options.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$config" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+  <span class="php-quote">'plainEncoding'</span> =&gt; <span class="php-quote">'base64'</span>,
+  <span class="php-quote">'htmlEncoding'</span> =&gt; <span class="php-quote">'base64'</span>,
+  <span class="php-quote">'calenderEncoding'</span> =&gt; <span class="php-quote">'base64'</span>,
+  <span class="php-quote">'plainCharset'</span> =&gt; <span class="php-quote">'ISO-8859-1'</span>,
+  <span class="php-quote">'htmlCharset'</span> =&gt; <span class="php-quote">'ISO-8859-1'</span>,
+  <span class="php-quote">'calenderCharset'</span> =&gt; <span class="php-quote">'UTF-8'</span>,
+  <span class="php-quote">'calenderMethod'</span> =&gt; <span class="php-quote">'request'</span>,
+  <span class="php-quote">'eol'</span> =&gt; <span class="php-quote">'
+'</span>,
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$mailConfig">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected static
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#223-243" class="property-name">$mailConfig</a>
+        </code>
+        <div class="description">
+            <pre>Used to get updated mail configuration of the class.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$mailConfig" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+  <span class="php-quote">'base'</span> =&gt; 
+  <span class="php-keyword1">array</span> (
+  ),
+  <span class="php-quote">'images'</span> =&gt; 
+  <span class="php-keyword1">array</span> (
+    <span class="php-quote">'nameEncoding'</span> =&gt; <span class="php-quote">'US-ASCII'</span>,
+    <span class="php-quote">'fileNameEncoding'</span> =&gt; <span class="php-quote">'US-ASCII'</span>,
+    <span class="php-quote">'type'</span> =&gt; <span class="php-quote">'application/octet-stream'</span>,
+  ),
+  <span class="php-quote">'attachments'</span> =&gt; 
+  <span class="php-keyword1">array</span> (
+    <span class="php-quote">'nameEncoding'</span> =&gt; <span class="php-quote">'US-ASCII'</span>,
+    <span class="php-quote">'fileNameEncoding'</span> =&gt; <span class="php-quote">'US-ASCII'</span>,
+    <span class="php-quote">'encoding'</span> =&gt; <span class="php-quote">'base64'</span>,
+    <span class="php-quote">'disposition'</span> =&gt; <span class="php-quote">'attachment'</span>,
+    <span class="php-quote">'type'</span> =&gt; <span class="php-quote">'application/octet-stream'</span>,
+    <span class="php-quote">'charset'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'language'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'location'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'description'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'headerCharset'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'headers'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+    ),
+  ),
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$appConfig">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected static
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#252" class="property-name">$appConfig</a>
+        </code>
+        <div class="description">
+            <pre>Used to get application configuration of the class.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$appConfig" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$boundaryMixed">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#261" class="property-name">$boundaryMixed</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the mixed boundary.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$boundaryMixed" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$boundaryAlternative">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#270" class="property-name">$boundaryAlternative</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the alternative boundary.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$boundaryAlternative" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$boundaryRelated">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#279" class="property-name">$boundaryRelated</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the related boundary.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$boundaryRelated" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$validEncodings">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected static
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#288-292" class="property-name">$validEncodings</a>
+        </code>
+        <div class="description">
+            <pre>Used to store valid encodings.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$validEncodings" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+  <span class="php-num">0</span> =&gt; <span class="php-quote">'quoted-printable'</span>,
+  <span class="php-num">1</span> =&gt; <span class="php-quote">'base64'</span>,
+  <span class="php-num">2</span> =&gt; <span class="php-quote">'8bit'</span>,
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$defaultEncoding">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected static
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Mail.Mail.html#301" class="property-name">$defaultEncoding</a>
+        </code>
+        <div class="description">
+            <pre>Used to store default encoding, used if invalid encoding is provided.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$defaultEncoding" class="anchor float-right">#</a>
+            <code><span class="php-quote">'base64'</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+        </ul>
+        </div>
+
+
+    <div id="footer">
+        Thanks to <a href="https://github.com/apigen/apigen">ApiGen</a>
+    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="resources/jquery-3.2.1.min.js"></script>
+        <script src="resources/jquery-ui-1.12.1.min.js"></script>
+
+        <script src="elementlist.js"></script>
+        <script src="resources/main.js"></script>
+    </body>
+</html>
+
+

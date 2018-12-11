@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/style.css">
+
+        <title>
+            Class FluitoPHP\Request\Request | FluitoPHP
+        </title>
+    </head>
+
+    <body class="FluitoPHP-API">
+<div id="navigation" class="bg-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a href="index.html">
+                        FluitoPHP
+                    </a>
+                </li>
+
+                    <li class="nav-item ">
+                        <a href="classes.html">Classes</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="interfaces.html">Interfaces</a>
+                    </li>
+
+
+
+                    <li class="nav-item ">
+                        <a href="exceptions.html">Exceptions</a>
+                    </li>
+
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-todo.html">
+                            @Todo
+                        </a>
+                    </li>
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-deprecated.html">
+                            @Deprecated
+                        </a>
+                    </li>
+            </ul>
+
+            <form id="search" class="form-inline my-2 my-lg-0 float-right">
+                <input type="text" name="q" class="form-control text" placeholder="Search class, function or namespace" autofocus>
+            </form>
+        </nav>
+    </div>
+</div>
+            <div id="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+<div class="float-left type breadcrumb">
+    <span class="badge badge-success">Class</span>
+</div>
+
+<nav class="float-left" aria-label="breadcrumb" role="navigation">
+<ol class="breadcrumb pull-left">
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.html">FluitoPHP</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.Request.html">Request</a>
+        </li>
+
+        <li class="breadcrumb-item active" aria-current="page">Request</li>
+</ol>
+</nav>                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+    <h2 class="mt-3 mb-3 ">Request</h2>
+
+        <div class="card">
+            <div class="card-body">
+                <pre>Define Request Class.
+
+Variables:
+     1. $instance
+     2. $module
+     3. $controller
+     4. $action
+     5. $errorModule
+     6. $errorHandler
+     7. $subPath
+     8. $parsedURL
+     9. $SERVER
+     10. $ENV
+     11. $GET
+     12. $POST
+     13. $COOKIE
+     14. $FILES
+     15. $defaultModule
+     16. $defaultController
+     17. $defaultAction
+     18. $URLModule
+     19. $URLController
+     20. $URLAction
+     21. $URLModuleTaken
+     22. $preRan
+     23. $moduleFixed
+     24. $modules
+     25. $originalParsedURL
+     26. $rawPostData
+     27. $requestHeaders
+
+Functions:
+     1. __construct
+     2. GetInstance
+     3. Setup
+     4. GetModule
+     5. GetController
+     6. GetAction
+     7. GetErrorModule
+     8. GetErrorHandler
+     9. GetURLSubPath
+     10. GetURLVars
+     11. GetSubPath
+     12. Run
+     13. HandleError
+     14. Server
+     15. Env
+     16. Get
+     17. Post
+     18. Cookie
+     19. Files
+     20. IsPost
+     21. URL
+     22. PreRun
+     23. SetModule
+     24. SetController
+     25. SetAction
+     26. FixModule
+     27. GetModules
+     28. ShiftModule
+     29. ShiftController
+     30. RefreshMaps
+     31. GetRawPostData
+     32. GetRequestHeader
+     33. IsModuleFixed</pre>
+            </div>
+        </div>
+
+
+
+
+    <div class="info">
+        
+
+            <br>
+            <br>
+            <a href="source-class-FluitoPHP.Request.Request.html" class="open-source-code">Open source code</a>
+        <br>
+    </div>
+
+        <div class="card" id="methods">
+        <div class="card-header">
+            <h4><strong>Methods Summary</strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetInstance">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public static
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetInstance">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#379-387">GetInstance</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to fetch the singleton instance object.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Setup">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Setup">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#397-687">Setup</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get the module name.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetModule">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetModule">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#696-700">GetModule</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get the module name.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetController">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetController">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#709-713">GetController</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get the controller name.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetAction">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetAction">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#722-726">GetAction</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get the action name.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetErrorModule">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetErrorModule">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#735-739">GetErrorModule</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get the error module name.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetErrorHandler">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetErrorHandler">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#748-752">GetErrorHandler</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get the error handler name.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetURLSubPath">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetURLSubPath">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#761-765">GetURLSubPath</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get the subPath.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetURLVars">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetURLVars">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#774-778">GetURLVars</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get the parsedURL array.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetSubPath">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetSubPath">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#787-791">GetSubPath</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get the subpath of the application.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Run">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Run">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#799-812">Run</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to run the request.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_HandleError">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_HandleError">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#821-971">HandleError</a>( <span> \Exception <span class="property-name">$exception</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to handle the errors/exceptions.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Server">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Server">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#981-1006">Server</a>( <span> string <span class="property-name">$key</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to get SERVER variables.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Env">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Env">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1016-1029">Env</a>( <span> string <span class="property-name">$key</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to get ENV variables.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Get">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Get">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1039-1052">Get</a>( <span> string <span class="property-name">$key</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to get GET variables.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Post">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Post">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1062-1075">Post</a>( <span> string <span class="property-name">$key</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to get POST variables.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Cookie">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Cookie">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1085-1098">Cookie</a>( <span> string <span class="property-name">$key</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to get COOKIE variables.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Files">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Files">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1108-1121">Files</a>( <span> string <span class="property-name">$key</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to get FILES variables.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_IsPost">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_IsPost">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1130-1134">IsPost</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to check if the current request is of POST type.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_URL">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_URL">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1149-1243">URL</a>( <span> string <span class="property-name">$pathOrController</span> = <span class="php-quote">''</span></span>, <span> string <span class="property-name">$action</span> = <span class="php-quote">''</span></span>, <span> string <span class="property-name">$module</span> = <span class="php-quote">''</span></span>, <span> array <span class="property-name">$addArgs</span> = <span class="php-keyword1">array</span> ( )</span>, <span> array <span class="property-name">$query</span> = <span class="php-keyword1">array</span> ( )</span>, <span> string <span class="property-name">$customPrefix</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the URL to any path or action.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_PreRun">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_PreRun">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1251-1341">PreRun</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to Run before the MVC but after the Bootloaders.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_SetModule">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_SetModule">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1351-1391">SetModule</a>( <span> string <span class="property-name">$module</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to update the module name.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_SetController">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_SetController">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1401-1444">SetController</a>( <span> string <span class="property-name">$controller</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to update the controller name.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_SetAction">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_SetAction">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1454-1502">SetAction</a>( <span> string <span class="property-name">$action</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to update the action name.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_FixModule">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_FixModule">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1510-1514">FixModule</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to fix the module so that it can not be updated by code.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetModules">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetModules">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1523-1527">GetModules</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get all the module names.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_ShiftModule">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_ShiftModule">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1537-1605">ShiftModule</a>( <span> string <span class="property-name">$module</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to update the module name and shift the contents to controller and further to action.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_ShiftController">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_ShiftController">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1615-1663">ShiftController</a>( <span> string <span class="property-name">$controller</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to update the controller name.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetRawPostData">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetRawPostData">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1741-1752">GetRawPostData</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to get the post request raw data.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetRequestHeader">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetRequestHeader">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1762-1804">GetRequestHeader</a>( <span> string <span class="property-name">$key</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to get the request header.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_IsModuleFixed">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_IsModuleFixed">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Request.Request.html#1813-1817">IsModuleFixed</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to check if the module is fixed or not.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+        </ul>
+        </div>
+
+
+
+
+
+
+
+    <div id="footer">
+        Thanks to <a href="https://github.com/apigen/apigen">ApiGen</a>
+    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="resources/jquery-3.2.1.min.js"></script>
+        <script src="resources/jquery-ui-1.12.1.min.js"></script>
+
+        <script src="elementlist.js"></script>
+        <script src="resources/main.js"></script>
+    </body>
+</html>
+
+

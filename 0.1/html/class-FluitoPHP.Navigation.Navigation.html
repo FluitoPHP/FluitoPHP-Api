@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/style.css">
+
+        <title>
+            Class FluitoPHP\Navigation\Navigation | FluitoPHP
+        </title>
+    </head>
+
+    <body class="FluitoPHP-API">
+<div id="navigation" class="bg-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a href="index.html">
+                        FluitoPHP
+                    </a>
+                </li>
+
+                    <li class="nav-item ">
+                        <a href="classes.html">Classes</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="interfaces.html">Interfaces</a>
+                    </li>
+
+
+
+                    <li class="nav-item ">
+                        <a href="exceptions.html">Exceptions</a>
+                    </li>
+
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-todo.html">
+                            @Todo
+                        </a>
+                    </li>
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-deprecated.html">
+                            @Deprecated
+                        </a>
+                    </li>
+            </ul>
+
+            <form id="search" class="form-inline my-2 my-lg-0 float-right">
+                <input type="text" name="q" class="form-control text" placeholder="Search class, function or namespace" autofocus>
+            </form>
+        </nav>
+    </div>
+</div>
+            <div id="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+<div class="float-left type breadcrumb">
+    <span class="badge badge-success">Class</span>
+</div>
+
+<nav class="float-left" aria-label="breadcrumb" role="navigation">
+<ol class="breadcrumb pull-left">
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.html">FluitoPHP</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.Navigation.html">Navigation</a>
+        </li>
+
+        <li class="breadcrumb-item active" aria-current="page">Navigation</li>
+</ol>
+</nav>                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+    <h2 class="mt-3 mb-3 ">Navigation</h2>
+
+        <div class="card">
+            <div class="card-body">
+                <pre>Navigation Class.
+
+This class is used to generate navigation.
+
+Variables:
+     1. $config
+     2. $elements
+     3. $parentNav
+     4. $appConfig
+
+Functions:
+     1. __construct
+     2. UpdateConfig
+     3. AddElement
+     4. AddSeparator
+     5. RemoveElement
+     6. SetActive
+     7. RemoveActive
+     8. GetElement
+     9. GetSubNav
+     10. IsSubNav
+     11. ContainsActive
+     12. GenerateElement
+     13. Generate
+     14. Render</pre>
+            </div>
+        </div>
+
+        <dl class="tree">
+            <dd>
+                    extends
+                    <a href="class-FluitoPHP.Base.Base.html">
+                        FluitoPHP\Base\Base
+                    </a>
+
+
+            </dd>
+        </dl>
+
+
+
+    <div class="info">
+        
+
+            <br>
+            <br>
+            <a href="source-class-FluitoPHP.Navigation.Navigation.html" class="open-source-code">Open source code</a>
+        <br>
+    </div>
+
+        <div class="card" id="methods">
+        <div class="card-header">
+            <h4><strong>Methods Summary</strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+
+
+
+<li class="list-group-item name ">
+    <div id="___construct">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#___construct">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Navigation.Navigation.html#202-261">__construct</a>( <span> array <span class="property-name">$config</span> = <span class="php-keyword1">array</span> ( )</span>, <span> \FluitoPHP\Navigation\Navigation <span class="property-name">$parentNav</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Constructor to initialize this class.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_UpdateConfig">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_UpdateConfig">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Navigation.Navigation.html#271-318">UpdateConfig</a>( <span> array <span class="property-name">$config</span> = <span class="php-keyword1">array</span> ( )</span>, <span> \FluitoPHP\Navigation\Navigation <span class="property-name">$parentNav</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to update the configuration of the navigation.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_AddElement">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_AddElement">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Navigation.Navigation.html#332-398">AddElement</a>( <span> string <span class="property-name">$name</span> </span>, <span> string <span class="property-name">$url</span> </span>, <span> string <span class="property-name">$title</span> = <span class="php-keyword1">NULL</span></span>, <span> array <span class="property-name">$params</span> = <span class="php-keyword1">array</span> ( )</span>, <span> int <span class="property-name">$position</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to add an element to the navigation.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_AddSeparator">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_AddSeparator">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Navigation.Navigation.html#409-440">AddSeparator</a>( <span> array <span class="property-name">$params</span> = <span class="php-keyword1">array</span> ( )</span>, <span> int <span class="property-name">$position</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to add a separator element to the navigation.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RemoveElement">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RemoveElement">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Navigation.Navigation.html#450-463">RemoveElement</a>( <span> int <span class="property-name">$position</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to remove an element from the navigation.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_SetActive">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_SetActive">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Navigation.Navigation.html#473-489">SetActive</a>( <span> int <span class="property-name">$position</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to set an element of the navigation active.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_RemoveActive">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_RemoveActive">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Navigation.Navigation.html#497-526">RemoveActive</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to set the active element of the navigation as non active.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetElement">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetElement">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Navigation.Navigation.html#536-553">GetElement</a>( <span> int <span class="property-name">$position</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to get the element(s) of the navigation.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GetSubNav">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GetSubNav">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Navigation.Navigation.html#563-588">GetSubNav</a>( <span> int <span class="property-name">$position</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to get the sub-navigation object of the element.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_IsSubNav">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_IsSubNav">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Navigation.Navigation.html#597-601">IsSubNav</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to check if the element is a sub navigation.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_ContainsActive">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_ContainsActive">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Navigation.Navigation.html#610-627">ContainsActive</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to check if there is an active element in the navigation.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GenerateElement">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GenerateElement">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Navigation.Navigation.html#637-1119">GenerateElement</a>( <span> array <span class="property-name">$element</span> </span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the element and its subnav.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Generate">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Generate">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Navigation.Navigation.html#1129-1266">Generate</a>( <span> string <span class="property-name">$filter</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the html of the navigation.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Render">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Render">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Navigation.Navigation.html#1276-1284">Render</a>( <span> string <span class="property-name">$filter</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to render the navigation.
+
+Sub-navigation will not get rendered.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+        </ul>
+        </div>
+
+        <div class="card" id="inherits">
+        <div class="card-header">
+            <h4><strong>Methods inherited from <a href="class-FluitoPHP.Base.Base.html#methods">FluitoPHP\Base\Base</a></strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Framework">Framework()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Request">Request()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Response">Response()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_DB">DB()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Session">Session()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Authentication">Authentication()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Authorization">Authorization()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_View">View()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Model">Model()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Set">Set()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Get">Get()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_URL">URL()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Events">Events()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Filters">Filters()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Load">Load()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Extract">Extract()</a></code>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+        <div class="card" id="properties">
+        <div class="card-header">
+            <h4><strong>Properties Summary</strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+<li class="list-group-item name ">
+    <div id="$config">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Navigation.Navigation.html#58-165" class="property-name">$config</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the configuration of the navigation.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$config" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+  <span class="php-quote">'container'</span> =&gt; 
+  <span class="php-keyword1">array</span> (
+    <span class="php-quote">'tag'</span> =&gt; <span class="php-quote">'ul'</span>,
+    <span class="php-quote">'prefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'suffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'class'</span> =&gt; <span class="php-quote">'nav navbar-nav'</span>,
+    <span class="php-quote">'id'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'attributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+    ),
+  ),
+  <span class="php-quote">'subContainer'</span> =&gt; 
+  <span class="php-keyword1">array</span> (
+    <span class="php-quote">'tag'</span> =&gt; <span class="php-quote">'ul'</span>,
+    <span class="php-quote">'prefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'suffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'class'</span> =&gt; <span class="php-quote">'dropdown-menu'</span>,
+    <span class="php-quote">'id'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'attributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+    ),
+  ),
+  <span class="php-quote">'separator'</span> =&gt; 
+  <span class="php-keyword1">array</span> (
+    <span class="php-quote">'tag'</span> =&gt; <span class="php-quote">'li'</span>,
+    <span class="php-quote">'prefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'suffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'class'</span> =&gt; <span class="php-quote">'divider'</span>,
+    <span class="php-quote">'id'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'attributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+      <span class="php-quote">'role'</span> =&gt; <span class="php-quote">'separator'</span>,
+    ),
+  ),
+  <span class="php-quote">'element'</span> =&gt; 
+  <span class="php-keyword1">array</span> (
+    <span class="php-quote">'tag'</span> =&gt; <span class="php-quote">'li'</span>,
+    <span class="php-quote">'prefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'suffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'activeClass'</span> =&gt; <span class="php-quote">'active'</span>,
+    <span class="php-quote">'subNavClass'</span> =&gt; <span class="php-quote">'dropdown'</span>,
+    <span class="php-quote">'subNavActiveClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'class'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'id'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'attributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+    ),
+    <span class="php-quote">'linkTag'</span> =&gt; <span class="php-quote">'a'</span>,
+    <span class="php-quote">'linkActiveTag'</span> =&gt; <span class="php-quote">'a'</span>,
+    <span class="php-quote">'linkPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkInnerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkInnerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkSubNavInnerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkSubNavInnerSuffix'</span> =&gt; <span class="php-quote">' &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;'</span>,
+    <span class="php-quote">'linkActiveInnerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkActiveInnerSuffix'</span> =&gt; <span class="php-quote">' &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;'</span>,
+    <span class="php-quote">'linkSubNavActiveInnerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkSubNavActiveInnerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkActiveClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkSubNavActiveClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkSubNavClass'</span> =&gt; <span class="php-quote">'dropdown-toggle'</span>,
+    <span class="php-quote">'linkClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkId'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkAttributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+    ),
+    <span class="php-quote">'linkSubNavAttributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+      <span class="php-quote">'data-toggle'</span> =&gt; <span class="php-quote">'dropdown'</span>,
+      <span class="php-quote">'role'</span> =&gt; <span class="php-quote">'button'</span>,
+      <span class="php-quote">'aria-haspopup'</span> =&gt; <span class="php-quote">'true'</span>,
+      <span class="php-quote">'aria-expanded'</span> =&gt; <span class="php-quote">'false'</span>,
+    ),
+  ),
+  <span class="php-quote">'subElement'</span> =&gt; 
+  <span class="php-keyword1">array</span> (
+    <span class="php-quote">'tag'</span> =&gt; <span class="php-quote">'li'</span>,
+    <span class="php-quote">'prefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'suffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'activeClass'</span> =&gt; <span class="php-quote">'active'</span>,
+    <span class="php-quote">'subNavClass'</span> =&gt; <span class="php-quote">'dropdown'</span>,
+    <span class="php-quote">'subNavActiveClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'class'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'id'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'attributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+    ),
+    <span class="php-quote">'linkTag'</span> =&gt; <span class="php-quote">'a'</span>,
+    <span class="php-quote">'linkActiveTag'</span> =&gt; <span class="php-quote">'a'</span>,
+    <span class="php-quote">'linkPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkInnerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkInnerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkSubNavInnerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkSubNavInnerSuffix'</span> =&gt; <span class="php-quote">' &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;'</span>,
+    <span class="php-quote">'linkActiveInnerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkActiveInnerSuffix'</span> =&gt; <span class="php-quote">' &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;'</span>,
+    <span class="php-quote">'linkSubNavActiveInnerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkSubNavActiveInnerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkActiveClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkSubNavActiveClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkSubNavClass'</span> =&gt; <span class="php-quote">'dropdown-toggle'</span>,
+    <span class="php-quote">'linkClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkId'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkAttributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+    ),
+    <span class="php-quote">'linkSubNavAttributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+      <span class="php-quote">'data-toggle'</span> =&gt; <span class="php-quote">'dropdown'</span>,
+      <span class="php-quote">'role'</span> =&gt; <span class="php-quote">'button'</span>,
+      <span class="php-quote">'aria-haspopup'</span> =&gt; <span class="php-quote">'true'</span>,
+      <span class="php-quote">'aria-expanded'</span> =&gt; <span class="php-quote">'false'</span>,
+    ),
+  ),
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$elements">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Navigation.Navigation.html#174" class="property-name">$elements</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the elements of the navigation.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$elements" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$parentNav">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            <a href="class-FluitoPHP.Navigation.Navigation.html">FluitoPHP\Navigation\Navigation</a>
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Navigation.Navigation.html#183" class="property-name">$parentNav</a>
+        </code>
+        <div class="description">
+            <pre>Used to store parent navigation if this instance is a sub-navigation.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$parentNav" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$appConfig">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected static
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Navigation.Navigation.html#192" class="property-name">$appConfig</a>
+        </code>
+        <div class="description">
+            <pre>Used to get application configuration of the class.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$appConfig" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+        </ul>
+        </div>
+
+
+    <div id="footer">
+        Thanks to <a href="https://github.com/apigen/apigen">ApiGen</a>
+    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="resources/jquery-3.2.1.min.js"></script>
+        <script src="resources/jquery-ui-1.12.1.min.js"></script>
+
+        <script src="elementlist.js"></script>
+        <script src="resources/main.js"></script>
+    </body>
+</html>
+
+

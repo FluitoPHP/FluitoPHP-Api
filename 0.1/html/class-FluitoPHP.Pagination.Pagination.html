@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/style.css">
+
+        <title>
+            Class FluitoPHP\Pagination\Pagination | FluitoPHP
+        </title>
+    </head>
+
+    <body class="FluitoPHP-API">
+<div id="navigation" class="bg-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a href="index.html">
+                        FluitoPHP
+                    </a>
+                </li>
+
+                    <li class="nav-item ">
+                        <a href="classes.html">Classes</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="interfaces.html">Interfaces</a>
+                    </li>
+
+
+
+                    <li class="nav-item ">
+                        <a href="exceptions.html">Exceptions</a>
+                    </li>
+
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-todo.html">
+                            @Todo
+                        </a>
+                    </li>
+                    <li class="nav-item annotation-group 'annotation-group-' . $annotationGroup ">
+                        <a href="annotation-group-deprecated.html">
+                            @Deprecated
+                        </a>
+                    </li>
+            </ul>
+
+            <form id="search" class="form-inline my-2 my-lg-0 float-right">
+                <input type="text" name="q" class="form-control text" placeholder="Search class, function or namespace" autofocus>
+            </form>
+        </nav>
+    </div>
+</div>
+            <div id="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+<div class="float-left type breadcrumb">
+    <span class="badge badge-success">Class</span>
+</div>
+
+<nav class="float-left" aria-label="breadcrumb" role="navigation">
+<ol class="breadcrumb pull-left">
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.html">FluitoPHP</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="namespace-FluitoPHP.Pagination.html">Pagination</a>
+        </li>
+
+        <li class="breadcrumb-item active" aria-current="page">Pagination</li>
+</ol>
+</nav>                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+    <h2 class="mt-3 mb-3 ">Pagination</h2>
+
+        <div class="card">
+            <div class="card-body">
+                <pre>Pagination Class.
+
+This class is used to generate pagination.
+
+Variables:
+     1. $config
+     2. $url
+     3. $totalPages
+     4. $currentPage
+     5. $type
+     6. $linksToShow
+     7. $appConfig
+     8. $sepId
+
+Functions:
+     1. __construct
+     2. UpdateConfig
+     3. Setup
+     4. GenerateElement
+     5. GenerateSeparator
+     6. Generate
+     7. Render</pre>
+            </div>
+        </div>
+
+        <dl class="tree">
+            <dd>
+                    extends
+                    <a href="class-FluitoPHP.Base.Base.html">
+                        FluitoPHP\Base\Base
+                    </a>
+
+
+            </dd>
+        </dl>
+
+
+
+    <div class="info">
+        
+
+            <br>
+            <br>
+            <a href="source-class-FluitoPHP.Pagination.Pagination.html" class="open-source-code">Open source code</a>
+        <br>
+    </div>
+
+        <div class="card" id="methods">
+        <div class="card-header">
+            <h4><strong>Methods Summary</strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+
+
+
+<li class="list-group-item name ">
+    <div id="___construct">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#___construct">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Pagination.Pagination.html#220-371">__construct</a>( <span> array <span class="property-name">$config</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Constructor to initialize this class.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_UpdateConfig">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_UpdateConfig">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Pagination.Pagination.html#385-473">UpdateConfig</a>( <span> string <span class="property-name">$url</span> </span>, <span> int <span class="property-name">$totalPages</span> </span>, <span> int <span class="property-name">$currentPage</span> = <span class="php-keyword1">NULL</span></span>, <span> int <span class="property-name">$type</span> = <span class="php-keyword1">NULL</span></span>, <span> int <span class="property-name">$linksToShow</span> = <span class="php-keyword1">NULL</span></span>, <span> array <span class="property-name">$config</span> = <span class="php-keyword1">array</span> ( )</span> )</code></div>
+
+            <div class="description">
+                <pre>Used to update the configuration of the pagination.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Setup">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Setup">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Pagination.Pagination.html#487-498">Setup</a>( <span> string <span class="property-name">$url</span> </span>, <span> int <span class="property-name">$totalPages</span> = <span class="php-num">1</span></span>, <span> int <span class="property-name">$currentPage</span> = <span class="php-num">1</span></span>, <span> int <span class="property-name">$type</span> = <span class="php-num">0</span></span>, <span> int <span class="property-name">$linksToShow</span> = <span class="php-num">5</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to setup the pagination/pager.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GenerateElement">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GenerateElement">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Pagination.Pagination.html#509-872">GenerateElement</a>( <span> int <span class="property-name">$pageNumber</span> </span>, <span> bool <span class="property-name">$disableActive</span> = <span class="php-keyword1">false</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the html of the element.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_GenerateSeparator">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_GenerateSeparator">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Pagination.Pagination.html#881-980">GenerateSeparator</a>( )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the html of the separator.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Generate">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Generate">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Pagination.Pagination.html#990-1202">Generate</a>( <span> string <span class="property-name">$filter</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to generate the html of the pagination/pager.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item name ">
+    <div id="_Render">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </div>
+
+    <div class="item-name col-10">
+        <div>
+            <a class="anchor float-right" href="#_Render">#</a>
+            <div class="item-defn"><code><a href="source-class-FluitoPHP.Pagination.Pagination.html#1211-1215">Render</a>( <span> string <span class="property-name">$filter</span> = <span class="php-keyword1">NULL</span></span> )</code></div>
+
+            <div class="description">
+                <pre>Used to render the pagination/pager.</pre>
+
+
+
+
+
+                    <h5>author</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+                    <h5>since</h5>
+                    <div class="list">
+                        <br>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+        </ul>
+        </div>
+
+        <div class="card" id="inherits">
+        <div class="card-header">
+            <h4><strong>Methods inherited from <a href="class-FluitoPHP.Base.Base.html#methods">FluitoPHP\Base\Base</a></strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Framework">Framework()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Request">Request()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Response">Response()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_DB">DB()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Session">Session()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Authentication">Authentication()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Authorization">Authorization()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_View">View()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Model">Model()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Set">Set()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Get">Get()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_URL">URL()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Events">Events()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Filters">Filters()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Load">Load()</a></code>, 
+                        <code><a href="class-FluitoPHP.Base.Base.html#_Extract">Extract()</a></code>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+        <div class="card" id="properties">
+        <div class="card-header">
+            <h4><strong>Properties Summary</strong></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+<li class="list-group-item name ">
+    <div id="$config">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Pagination.Pagination.html#55-148" class="property-name">$config</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the configuration of the pagination.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$config" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">array</span> (
+  <span class="php-quote">'container'</span> =&gt; 
+  <span class="php-keyword1">array</span> (
+    <span class="php-quote">'tag'</span> =&gt; <span class="php-quote">'ul'</span>,
+    <span class="php-quote">'prefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'suffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'class'</span> =&gt; <span class="php-quote">'pagination'</span>,
+    <span class="php-quote">'id'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'attributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+    ),
+  ),
+  <span class="php-quote">'pager'</span> =&gt; 
+  <span class="php-keyword1">array</span> (
+    <span class="php-quote">'tag'</span> =&gt; <span class="php-quote">'li'</span>,
+    <span class="php-quote">'prefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'suffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'activeClass'</span> =&gt; <span class="php-quote">'active'</span>,
+    <span class="php-quote">'disabledClass'</span> =&gt; <span class="php-quote">'disabled'</span>,
+    <span class="php-quote">'class'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'id'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'attributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+    ),
+    <span class="php-quote">'linkTag'</span> =&gt; <span class="php-quote">'a'</span>,
+    <span class="php-quote">'linkActiveTag'</span> =&gt; <span class="php-quote">'span'</span>,
+    <span class="php-quote">'linkDisabledTag'</span> =&gt; <span class="php-quote">'span'</span>,
+    <span class="php-quote">'linkPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkInnerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkInnerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkActiveInnerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkActiveInnerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkDisabledInnerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkDisabledInnerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkActiveClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkDisabledClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkId'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkAttributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+    ),
+    <span class="php-quote">'previousText'</span> =&gt; <span class="php-quote">'&lt;span aria-hidden=&quot;true&quot;&gt;&amp;larr;&lt;/span&gt; Previous'</span>,
+    <span class="php-quote">'nextText'</span> =&gt; <span class="php-quote">'Next &lt;span aria-hidden=&quot;true&quot;&gt;&amp;rarr;&lt;/span&gt;'</span>,
+    <span class="php-quote">'previousClass'</span> =&gt; <span class="php-quote">'previous'</span>,
+    <span class="php-quote">'nextClass'</span> =&gt; <span class="php-quote">'next'</span>,
+    <span class="php-quote">'previousAttributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+    ),
+    <span class="php-quote">'nextAttributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+    ),
+  ),
+  <span class="php-quote">'separator'</span> =&gt; 
+  <span class="php-keyword1">array</span> (
+    <span class="php-quote">'tag'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'prefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'suffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'class'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'id'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'attributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+    ),
+  ),
+  <span class="php-quote">'element'</span> =&gt; 
+  <span class="php-keyword1">array</span> (
+    <span class="php-quote">'tag'</span> =&gt; <span class="php-quote">'li'</span>,
+    <span class="php-quote">'prefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'suffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'innerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'activeClass'</span> =&gt; <span class="php-quote">'active'</span>,
+    <span class="php-quote">'disabledClass'</span> =&gt; <span class="php-quote">'disabled'</span>,
+    <span class="php-quote">'class'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'id'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'attributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+    ),
+    <span class="php-quote">'linkTag'</span> =&gt; <span class="php-quote">'a'</span>,
+    <span class="php-quote">'linkActiveTag'</span> =&gt; <span class="php-quote">'span'</span>,
+    <span class="php-quote">'linkDisabledTag'</span> =&gt; <span class="php-quote">'span'</span>,
+    <span class="php-quote">'linkPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkInnerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkInnerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkActiveInnerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkActiveInnerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkDisabledInnerPrefix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkDisabledInnerSuffix'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkActiveClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkDisabledClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkId'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'linkAttributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+    ),
+    <span class="php-quote">'previousText'</span> =&gt; <span class="php-quote">'&lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt;'</span>,
+    <span class="php-quote">'nextText'</span> =&gt; <span class="php-quote">'&lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt;'</span>,
+    <span class="php-quote">'previousClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'nextClass'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-quote">'previousAttributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+      <span class="php-quote">'aria-label'</span> =&gt; <span class="php-quote">'Previous'</span>,
+    ),
+    <span class="php-quote">'nextAttributes'</span> =&gt; 
+    <span class="php-keyword1">array</span> (
+      <span class="php-quote">'aria-label'</span> =&gt; <span class="php-quote">'Next'</span>,
+    ),
+  ),
+)</code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$url">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            string
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Pagination.Pagination.html#157" class="property-name">$url</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the url of the pagination. Use $1 to replace with the page number.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$url" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$totalPages">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            int
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Pagination.Pagination.html#166" class="property-name">$totalPages</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the total pages of the pagination.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$totalPages" class="anchor float-right">#</a>
+            <code><span class="php-num">1</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$currentPage">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            int
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Pagination.Pagination.html#175" class="property-name">$currentPage</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the current page of the pagination.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$currentPage" class="anchor float-right">#</a>
+            <code><span class="php-num">1</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$type">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            int
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Pagination.Pagination.html#184" class="property-name">$type</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the type, either pagination (0) or pager (1).
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$type" class="anchor float-right">#</a>
+            <code><span class="php-num">0</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$linksToShow">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            int
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Pagination.Pagination.html#193" class="property-name">$linksToShow</a>
+        </code>
+        <div class="description">
+            <pre>Used to store the number of links to show at a time.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$linksToShow" class="anchor float-right">#</a>
+            <code><span class="php-num">5</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$appConfig">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected static
+
+            array
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Pagination.Pagination.html#202" class="property-name">$appConfig</a>
+        </code>
+        <div class="description">
+            <pre>Used to get application configuration of the class.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$appConfig" class="anchor float-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+<li class="list-group-item name ">
+    <div id="$sepId">
+    <div class="row no-gutters">
+    <div class="item-attrib col-2">
+        <code class="keyword">
+            protected 
+
+            int
+        </code>
+    </div>
+    <div class="item-name col-8">
+        <code>
+            <a href="source-class-FluitoPHP.Pagination.Pagination.html#211" class="property-name">$sepId</a>
+        </code>
+        <div class="description">
+            <pre>Used to increment at separator generation for use in html id attribute.
+<br>
+<br>
+</pre>
+        </div>
+    </div>
+    <div class="item-value col-2">
+        <div>
+            <a href="#$sepId" class="anchor float-right">#</a>
+            <code><span class="php-num">0</span></code>
+        </div>
+    </div>
+    </div>
+    </div>
+</li>
+        </ul>
+        </div>
+
+
+    <div id="footer">
+        Thanks to <a href="https://github.com/apigen/apigen">ApiGen</a>
+    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="resources/jquery-3.2.1.min.js"></script>
+        <script src="resources/jquery-ui-1.12.1.min.js"></script>
+
+        <script src="elementlist.js"></script>
+        <script src="resources/main.js"></script>
+    </body>
+</html>
+
+

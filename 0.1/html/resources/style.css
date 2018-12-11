@@ -1,0 +1,435 @@
+.FluitoPHP-API {
+    font-family: Verdana, 'Geneva CE', lucida, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #333333;
+}
+
+.FluitoPHP-API h1,
+.FluitoPHP-API h2 {
+    font-family: 'Trebuchet MS', 'Geneva CE', lucida, sans-serif;
+}
+
+.FluitoPHP-API h1 {
+    color: #1e5eb6;
+    margin-bottom: 1em;
+}
+
+.FluitoPHP-API h2 {
+    color: #053368;
+    font-weight: bold;
+}
+
+.FluitoPHP-API .card-header h4 {
+    margin-bottom: 0;
+}
+
+.FluitoPHP-API .table > tbody > tr > th {
+    background: #ecede5;
+    padding-top: .3em;
+    padding-bottom: .3em;
+}
+
+.FluitoPHP-API p {
+    margin: .7em 0 1em;
+    padding: 0;
+}
+
+.FluitoPHP-API a,
+.FluitoPHP-API td a {
+    color: #006aeb;
+    padding: 3px 1px;
+    text-decoration: none;
+}
+
+.FluitoPHP-API a:hover,
+.FluitoPHP-API a:active,
+.FluitoPHP-API a:focus,
+.FluitoPHP-API a:hover b, 
+.FluitoPHP-API a:hover var {
+    background-color: #006aeb;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+.FluitoPHP-API .card {
+    margin-bottom: 1em;
+}
+
+.FluitoPHP-API code,
+.FluitoPHP-API var,
+.FluitoPHP-API pre {
+    font-family: monospace;
+}
+
+.FluitoPHP-API .item-defn {
+    overflow: auto;
+    margin-bottom: 1em;
+}
+
+.FluitoPHP-API pre {
+    margin: 0 0 1em 0;
+}
+
+.FluitoPHP-API .deprecated {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.FluitoPHP-API .deprecated span,
+.FluitoPHP-API .deprecated a {
+    text-decoration: line-through;
+}
+
+/* Search */
+.FluitoPHP-API #search {
+    margin-top: .3em;
+    margin-bottom: -.1em;
+}
+
+.FluitoPHP-API #search input.text {
+    width: 21em;
+}
+
+/* Autocomplete */
+.FluitoPHP-API .ui-autocomplete {
+    position: absolute;
+    z-index: 1000;
+    cursor: default;
+    padding: 0;
+    margin-top: 2px;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.FluitoPHP-API .ui-autocomplete > li {
+    padding: 0;
+}
+
+.FluitoPHP-API .ui-autocomplete > li a {
+    color: #555;
+    display: block;
+    padding-left: 10px;
+}
+
+.FluitoPHP-API .ui-autocomplete > li b {
+    font-weight: bold;
+}
+
+.FluitoPHP-API .ui-autocomplete .ui-state-hover,
+.FluitoPHP-API .ui-autocomplete .ui-state-active {
+    background: #006aeb;
+    color: white;
+}
+
+.FluitoPHP-API .ui-helper-hidden-accessible {
+    display: none;
+}
+
+
+/* Navigation */
+.FluitoPHP-API #navigation {
+    background: #f6f6f4;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.FluitoPHP-API #navigation .navbar {
+    min-height: 1em;
+    margin-bottom: .4em;
+}
+
+.FluitoPHP-API #navigation .separator {
+    border-left: 1px solid #000000;
+    padding: 0 .5em;
+}
+
+.FluitoPHP-API #navigation ul li {
+    margin: .35em 0 0 0;
+    padding: 0 .6em 0 0;
+    font-family: Verdana, 'Geneva CE', lucida, sans-serif;
+}
+
+.FluitoPHP-API #navigation ul li a {
+    color: #000000;
+    padding: .35em .6em;
+    font-weight: bold;
+}
+
+.FluitoPHP-API #navigation ul li a:hover {
+    background: #006aeb;
+}
+
+.FluitoPHP-API #navigation ul li a.active {
+    color: white;
+    background: #053368;
+}
+
+/* Breadcrumbs */
+.FluitoPHP-API #breadcrumbs {
+    background: rgba(0, 106, 235, 0.05);
+}
+
+.FluitoPHP-API #breadcrumbs .type {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.FluitoPHP-API #breadcrumbs .breadcrumb {
+    background: none;
+    margin-bottom: 0;
+}
+
+.FluitoPHP-API #breadcrumbs .backslash {
+    color: #ccc;
+    padding: 0 .2em;
+}
+
+.FluitoPHP-API dl.tree {
+    margin: 1.2em 0;
+}
+
+.FluitoPHP-API dl.tree dd {
+    margin: 0;
+    padding: 0;
+}
+
+.FluitoPHP-API .info {
+    margin: 1.2em 0;
+}
+
+.FluitoPHP-API .table {
+    margin-bottom: 2em;
+}
+
+.FluitoPHP-API .summary .description pre {
+    border: .5em solid #ecede5;
+}
+
+.FluitoPHP-API .summary .description p {
+    margin: 0;
+}
+
+.FluitoPHP-API .summary .description p + p,
+.FluitoPHP-API .summary .description ul {
+    margin: 3px 0 0 0;
+}
+
+.FluitoPHP-API .summary dl {
+    margin: 0;
+}
+
+.FluitoPHP-API .summary dd {
+    margin: 0 0 0 25px;
+}
+
+.FluitoPHP-API .name,
+.FluitoPHP-API .attributes {
+    white-space: nowrap;
+}
+
+.FluitoPHP-API .value code {
+    white-space: pre-wrap;
+}
+
+.FluitoPHP-API table .name > div > code {
+    white-space: pre-wrap;
+}
+
+.FluitoPHP-API table .name > div > code span {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.FluitoPHP-API .item-name {
+    white-space: normal;
+}
+
+.FluitoPHP-API .description {
+    white-space: normal;
+}
+
+.FluitoPHP-API .item-descr {
+    white-space: normal;
+}
+
+.FluitoPHP-API .anchor {
+    line-height: 1em;
+    margin-top: -.2em;
+    padding: .6em;
+}
+
+.FluitoPHP-API .list {
+    margin: 0 0 5px 25px;
+}
+
+/* Footer */
+.FluitoPHP-API #footer {
+    border-top: 1px solid #e9eeef;
+    clear: both;
+    color: #a7a7a7;
+    font-size: .8em;
+    text-align: center;
+    padding: 20px 0 0;
+    margin: 3em 0 0;
+    height: 14em;
+    background: #ffffff url('footer.png') no-repeat center top;
+}
+
+/* Source code */
+.FluitoPHP-API #source pre {
+    background: none;
+    border: 0;
+}
+
+.FluitoPHP-API #source pre.numbers {
+    padding-right: 0;
+    overflow: hidden;
+}
+
+.FluitoPHP-API #source pre.numbers a {
+    background: transparent;
+    color: #929292 !important;
+}
+
+.FluitoPHP-API #source pre.code {
+    padding-left: 0;
+}
+
+.FluitoPHP-API #source pre.code div {
+    white-space: pre;
+}
+
+.FluitoPHP-API .php-keyword1 {
+    color: #e71818;
+    font-weight: bold;
+}
+
+.FluitoPHP-API .php-keyword2 {
+    font-weight: bold;
+}
+
+.FluitoPHP-API .php-var {
+    color: #d59401;
+    font-weight: bold;
+}
+
+.FluitoPHP-API .php-num {
+    color: #cd0673;
+}
+
+.FluitoPHP-API .php-quote {
+    color: #008000;
+}
+
+.FluitoPHP-API .php-comment {
+    color: #929292;
+}
+
+.FluitoPHP-API .xlang {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.FluitoPHP-API pre.numbers {
+    float: left;
+}
+
+.FluitoPHP-API div.l {
+    display: block;
+}
+
+.FluitoPHP-API div.l.src.selected {
+    background: #f6f6f4;
+}
+
+.FluitoPHP-API #source pre.numbers div.l.line.selected a {
+    color: #940702 !important;
+}
+
+.FluitoPHP-API div.l a {
+    color: #333333;
+}
+
+.FluitoPHP-API div.l a:hover,
+.FluitoPHP-API div.l a:active,
+.FluitoPHP-API div.l a:focus {
+    background: transparent;
+    color: #333333 !important;
+}
+
+.FluitoPHP-API div.l .php-var a {
+    color: #d59401;
+}
+
+.FluitoPHP-API div.l .php-var a:hover,
+.FluitoPHP-API div.l .php-var a:active,
+.FluitoPHP-API div.l .php-var a:focus {
+    color: #d59401 !important;
+}
+
+.FluitoPHP-API div.l a.l {
+    padding-left: 2px;
+    color: #c0c0c0;
+}
+
+.FluitoPHP-API div.l a.l:hover,
+.FluitoPHP-API div.l a.l:active,
+.FluitoPHP-API div.l a.l:focus {
+    background: transparent;
+    color: #c0c0c0 !important;
+}
+
+/* Common Styling */
+.FluitoPHP-API .open-source-code {
+    font-weight: bold;
+}
+
+.FluitoPHP-API .constant-name {
+    font-weight: bold;
+}
+
+.FluitoPHP-API .property-name {
+    font-weight: bold;
+    font-style: normal;
+    color: #ca8a04;
+}
+
+.FluitoPHP-API p {
+    line-height: 1.3em;
+}
+
+/* Bootstrap Reset */
+.FluitoPHP-API code {
+    background: none;
+    color: inherit;
+}
+
+.FluitoPHP-API code.keyword {
+    color: #c7254e;
+    display: inline-block;
+    white-space: normal;
+}
+
+.FluitoPHP-API .form-control {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.FluitoPHP-API .panel {
+    border-radius: 0;
+    margin-bottom: 2em;
+}
+
+.FluitoPHP-API .panel pre {
+    padding: .6em;
+    background: #fcfcf7;
+    margin: .5em 0;
+}
+
+.FluitoPHP-API .panel-default {
+    background-color: #ecede5;
+}
